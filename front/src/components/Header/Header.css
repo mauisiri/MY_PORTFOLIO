@@ -1,8 +1,8 @@
 .header_menu {
     display: flex;
     justify-content:center;
-    align-items: center;
     color: var(--darkGrey);
+    padding:0;
 }
 
 .header_menu>li:hover {
@@ -13,5 +13,4 @@
 .about, .skills, .experience, .formation {
     display: flex;
     margin: 0px 15px 0px 15px;
-    margin-top: 10%;
 }
