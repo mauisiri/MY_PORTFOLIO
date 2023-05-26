@@ -1,3 +1,8 @@
+.main {
+    display:flex;
+    flex-direction: row;
+}
+
 .left_side {
     padding: 5rem;
 }
@@ -38,7 +43,6 @@
     text-overflow: inherit;
     margin-top: 8rem;
     margin-bottom: 1rem;
-
 }
 
 .my_app_text>div:nth-of-type(3) {
@@ -56,3 +60,14 @@
     margin-top: 1rem;
 }
 
+.right_side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile_pic {
+    height: 80%;
+    width: 80%;
+}
