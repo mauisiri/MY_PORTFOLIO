@@ -1,0 +1,17 @@
+.header_menu {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: var(--darkGrey);
+}
+
+.header_menu>li:hover {
+    cursor: pointer;
+    color: var(--dark);   
+}
+
+.about, .skills, .experience, .formation {
+    display: flex;
+    margin: 0px 15px 0px 15px;
+    margin-top: 10%;
+}

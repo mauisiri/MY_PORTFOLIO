@@ -1,0 +1,22 @@
+.languages_box {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.icon_text {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang_icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.lang_name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--darkGrey)
+}
