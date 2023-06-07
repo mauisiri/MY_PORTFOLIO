@@ -1,0 +1,78 @@
+.main {
+    display:flex;
+    flex-direction: row;
+}
+
+.left_side {
+    padding: 5rem;
+}
+
+.my_app_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--dark);
+    text-overflow: inherit;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+.my_app_text>div:nth-of-type(3) {
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width:80%;
+}
+
+.languages_box {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.right_side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile_pic {
+    position: absolute;
+    right:4rem;
+    top: 10rem;
+    width: 40rem;
+    filter: drop-shadow(30px 10px 4px #0000003f);
+}
+
+.the_best_app {
+    margin-top: 4rem;
+    background-color: var(--trGrey);
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: var(--light);
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.the_best_app>span {
+    z-index: 2;
+}
+
+.the_best_app>div {
+    position:absolute;
+    background-color: var(--darkGrey);
+    width: 5.4em;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 2;
+}
