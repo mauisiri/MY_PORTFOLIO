@@ -12,5 +12,5 @@
 
 .about, .skills, .experience, .formation {
     display: flex;
-    margin: 0px 15px 0px 15px;
+    margin: 60px 20px 30px 20px;
 }

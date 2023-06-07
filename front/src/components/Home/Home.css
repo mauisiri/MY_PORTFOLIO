@@ -15,7 +15,7 @@
     font-weight: bold;
     color: var(--dark);
     text-overflow: inherit;
-    margin-top: 8rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -64,12 +64,13 @@
 }
 
 .the_best_app>span {
-    z-index: 2;
+    z-index: 40;
+    color: var(--dark);
 }
 
 .the_best_app>div {
     position:absolute;
-    background-color: var(--darkGrey);
+    background-color: var(--gray);
     width: 5.4em;
     height: 80%;
     left: 8px;

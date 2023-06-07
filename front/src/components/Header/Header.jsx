@@ -7,7 +7,7 @@ const Header = () => {
             <ul className='header_menu'>
                 <li className='about'> Home
                 </li>
-                <li className='skills'> Skills
+                <li className='experience'> Projects & Skills
                 </li>
                 <li className='experience'> Experience
                 </li>

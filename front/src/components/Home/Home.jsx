@@ -5,7 +5,7 @@ import Css from '../Figures/Css'
 import Js from '../Figures/Js'
 import React_i from '../Figures/React_i'
 import Node from '../Figures/Node'
-import profile_pic from '../../assets/personalPic/profile_IrisLeo.png'
+/* import profile_pic from '../../assets/personalPic/profile_IrisLeo.png' */
 
 const Home = () => {
     return (
@@ -41,7 +41,7 @@ const Home = () => {
 
   <div className="the_best_app">
     <div></div>
-    <span>Check my formation</span>
+    <span>Contact me</span>
   </div>
 </div>
 
