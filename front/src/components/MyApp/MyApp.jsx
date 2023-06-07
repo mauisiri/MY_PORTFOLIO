@@ -26,7 +26,7 @@ const MyApp = () => {
             </div>
 
             <div>
-              <span>All progress takes place outside the comfort zone</span> 
+              <span>"All progress takes place outside the comfort zone"</span> 
             </div>
           </div>
 
