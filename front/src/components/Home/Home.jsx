@@ -46,7 +46,7 @@ const Home = () => {
 </div>
 
 <div className="right_side">
-  <img className='profile_pic' src={profile_pic} alt=' '/>
+  {/* <img className='profile_pic' src={profile_pic} alt=' '/> */}
 </div>
 </div>
 </>
