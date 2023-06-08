@@ -12,23 +12,52 @@
     font-weight: bold;
     color: var(--gray);
     text-overflow: inherit;
-    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
-
-
-.img{
+.project_card {
     display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gray);
 }
 
-.title{
-
+.text {
+    display:flex;
+    flex-direction: column;
 }
 
-.icons{
+.project_title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark);
+    text-overflow: inherit;
+    margin-bottom: 1rem;
+}
+
+.project_description {
+    font-size: 1rem;
+}
+
+.project_icons{
     display:flex;
     flex-direction: row;
     margin-top: 5px;
-    
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project_img{
+    width: 50%;
+}
+
+.project_img>div {
+    display:flex;
+    margin-left: 1rem;
 }
