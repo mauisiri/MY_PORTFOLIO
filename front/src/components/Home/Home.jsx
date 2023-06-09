@@ -41,7 +41,8 @@ const Home = () => {
 
   <div className="the_best_app">
     <div></div>
-    <span>Contact me</span>
+    <span>Contact</span>
+    <p>me</p>
   </div>
 </div>
 

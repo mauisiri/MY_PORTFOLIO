@@ -5,6 +5,7 @@
   --primary: #1c1b1b93;
   --secondary: #1c1b1b;
   --trGrey:rgb(128, 128, 128, 0.5);
+  --hr:rgba(217, 217, 217, 0.352);
   --darkGrey: #464D53;
 
 
@@ -23,7 +24,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: overlay;
-  background-color: var(--appColor);
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -38,4 +38,15 @@
   font-family: Arial, Helvetica, sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--dark);
+}
+
+hr {
+  height: 2px;
+  width: 90%;
+  background-color: var(--hr);
+  border-color: var(--hr);
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
