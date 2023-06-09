@@ -6,7 +6,7 @@ const Css = () => {
     return (
         <> 
             <div className='icon_text'>
-              <img className='lang_icon' src={icon_css} alt=' CSS3 '/>
+              <img className='lang_icon' src={icon_css} alt=''/>
               <span className='lang_name'>CSS3</span>
             </div>
         </>

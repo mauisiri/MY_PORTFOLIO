@@ -6,7 +6,7 @@ const Node = () => {
     return (
         <> 
             <div className='icon_text'>
-              <img className='variant' src={icon_node} alt=' Node '/>
+              <img className='variant' src={icon_node} alt=' '/>
               <span className='lang_name'>Node</span>
             </div>
         </>

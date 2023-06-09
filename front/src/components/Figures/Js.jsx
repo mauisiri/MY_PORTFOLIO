@@ -6,7 +6,7 @@ const Js = () => {
     return (
         <> 
             <div className='icon_text'>
-              <img className='lang_icon' src={icon_js} alt=' Java Script '/>
+              <img className='lang_icon' src={icon_js} alt=' '/>
               <span className='lang_name'>JS</span>
             </div>
         </>

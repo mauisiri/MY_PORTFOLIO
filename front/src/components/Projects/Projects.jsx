@@ -5,7 +5,14 @@ import Css from '../Figures/Css'
 import Js from '../Figures/Js'
 import React_i from '../Figures/React_i'
 import Node from '../Figures/Node'
-import project_img from '../../assets/projects/adoptacoder/home.jpg'
+import MySql from '../Figures/MySql'
+import Php from '../Figures/Php'
+import Laravel from '../Figures/Laravel'
+import adopt_home from '../../assets/projects/adoptacoder/home.jpeg'
+import weCheck_projects from '../../assets/projects/weCheck/projectsPage.jpeg'
+
+
+
 
 const Projects = () => {
   return (
@@ -33,7 +40,32 @@ const Projects = () => {
                         </span>
                 </div>
                 <span className='project_img'>
-                <img src={project_img} alt=' '/>
+                <img src={adopt_home} alt=' '/>
+                </span>
+        </div>
+
+        <div className='project_card'>         
+                <div className='text'>
+                        <span className='project_title'>WeCheck</span>
+                        <span className='project_description'>WeCheck is a rubric system for the critical evaluation of interfaces, this idea was developed by a research group from the Universitat Oberta de Catalunya. Different evaluators can review web pages and score them using this system. The client needs a website where these rubrics can be entered, so that registered or unregistered users can evaluate websites and obtain a visual result of the evaluations, by evaluator and by average.
+
+</span>
+                      
+
+                        <button className='btn'>GitHub</button>
+                        <a href="https://github.com/Rubrics-project/WeCheckUx" target="_blank" rel="noopener noreferrer"></a>
+
+                        <span className='project_icons'>
+                        <Js />
+                        <React_i />
+                        <Node />
+                        <Laravel />
+                        <MySql />
+                        <Php />
+                        </span>
+                </div>
+                <span className='project_img'>
+                <img src={weCheck_projects} alt=' '/>
                 </span>
         </div>
     </div>

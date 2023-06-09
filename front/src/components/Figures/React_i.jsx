@@ -6,7 +6,7 @@ const React_i = () => {
     return (
         <> 
             <div className='icon_text'>
-              <img className='lang_icon' src={icon_react} alt=' React ' />
+              <img className='lang_icon' src={icon_react} alt=' ' />
               <span className='lang_name'>React</span>
             </div>
         </>

@@ -6,7 +6,7 @@ const Html5 = () => {
     return (
         <>
             <div className='icon_text'>
-              <img className='lang_icon' src={icon_html} alt=' HTML5 '/>
+              <img className='lang_icon' src={icon_html} alt=' '/>
               <span className='lang_name'>HTML5</span>
             </div>
         </>
