@@ -47,7 +47,8 @@ const Projects = () => {
         <div className='project_card'>         
                 <div className='text'>
                         <span className='project_title'>WeCheck</span>
-                        <span className='project_description'>WeCheck is a rubric system for the critical evaluation of interfaces, this idea was developed by a research group from the Universitat Oberta de Catalunya. Different evaluators can review web pages and score them using this system. The client needs a website where these rubrics can be entered, so that registered or unregistered users can evaluate websites and obtain a visual result of the evaluations, by evaluator and by average.
+                        <span className='project_description'>WeCheck is a rubric system for the critical evaluation of interfaces, this idea was developed by a research group from the Universitat Oberta de Catalunya. 
+                        Different evaluators can review web pages and score them using this system. The customer needs a website where these rubrics can be entered, so that registered or unregistered users can evaluate websites and obtain a visual result of the evaluations, by evaluator and by average.
 
 </span>
                       

@@ -31,14 +31,6 @@ const Home = () => {
     </div>
   </div>
 
-  <div className="languages_box">
-    <Html5 />
-    <Css />
-    <Js />
-    <React_i />
-    <Node />
-  </div>
-
   <div className="the_best_app">
     <div></div>
     <span>Contact</span>
