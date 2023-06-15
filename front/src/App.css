@@ -18,9 +18,11 @@
 }
 
 .MyApp {
-  background-image: url(./assets/bg-white-square.jpeg);
+ /*  background-image: url(./assets/bg-white-square.jpeg); */
+/*   background-image: url(./assets/bg-dark.jpeg); */
+background-image: url(./assets/bg-blue.webp);
   height: 100%;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   mix-blend-mode: overlay;
