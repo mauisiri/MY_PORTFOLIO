@@ -19,6 +19,7 @@ const Projects = () => {
     <div className='projects'>
         <hr></hr>
         <span className='header'>PROJECTS</span>
+        <div className="projects_container">
         <div className='project_card'>         
                 <div className='text'>
                         <span className='project_title'>[adopt/a/coder]</span>
@@ -43,7 +44,7 @@ const Projects = () => {
                 <img src={adopt_home} alt=' '/>
                 </span>
         </div>
-
+        </div>
         <div className='project_card'>         
                 <div className='text'>
                         <span className='project_title'>WeCheck</span>
