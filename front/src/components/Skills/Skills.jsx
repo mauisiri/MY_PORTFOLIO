@@ -1,9 +1,12 @@
 import React from 'react'
 import './Skills.css'
 
+
+
 const Skills = () => {
   return (
     <div className='skills'>
+        <hr></hr>
         <span className='header'>SKILLS</span>
         <div className='content'>
             <span>Languages

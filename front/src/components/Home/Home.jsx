@@ -31,7 +31,7 @@ const Home = () => {
     </div>
   </div>
 
-  <div className="the_best_app">
+  <div className="contact_me">
     <div></div>
     <span>Contact</span>
     <p>me</p>

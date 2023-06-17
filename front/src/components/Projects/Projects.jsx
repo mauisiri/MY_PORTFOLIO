@@ -19,6 +19,7 @@ const Projects = () => {
     <div className='projects'>
         <hr></hr>
         <span className='header'>PROJECTS</span>
+        <div className="container">
         <div className="projects_container">
         <div className='project_card'>         
                 <div className='text'>
@@ -31,20 +32,21 @@ const Projects = () => {
 
                         <button className='btn'>GitHub</button>
                         <a href="https://github.com/mauisiri/adoptacoder" target="_blank" rel="noopener noreferrer"></a>
-
-                        <span className='project_icons'>
-                        <Html5 />
-                        <Css />
-                        <Js />
-                        <React_i />
-                        <Node />
-                        </span>
+                        <div className='icons_bg'>
+                                <span className='project_icons'>
+                                <Html5 />
+                                <Css />
+                                <Js />
+                                <React_i />
+                                <Node />
+                                </span>
+                        </div>
                 </div>
                 <span className='project_img'>
                 <img src={adopt_home} alt=' '/>
                 </span>
         </div>
-
+        </div>
         <div className='project_card'>         
                 <div className='text'>
                         <span className='project_title'>WeCheck</span>
