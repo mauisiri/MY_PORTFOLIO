@@ -43,9 +43,9 @@
 
 .profile_pic {
     position: absolute;
-    right:4rem;
+    right:10rem;
     top: 10rem;
-    width: 40rem;
+    width: 30rem;
     filter: drop-shadow(30px 10px 4px #0000003f);
 }
 

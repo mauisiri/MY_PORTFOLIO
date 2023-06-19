@@ -1,17 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Html5 from '../Figures/Html5'
-import Css from '../Figures/Css'
-import Js from '../Figures/Js'
-import React_i from '../Figures/React_i'
-import Node from '../Figures/Node'
-/* import profile_pic from '../../assets/personalPic/profile_IrisLeo.png' */
+import {motion} from 'framer-motion'
+import profile_pic from '../../assets/personalPic/profile_pic.png'
 
 const Home = () => {
+    const transition = {type: 'spring', duration : 2}
+
     return (
-
-
-
 <>
 <div className='main'>
 <div className="left_side">
@@ -32,14 +27,19 @@ const Home = () => {
   </div>
 
   <div className="contact_me">
-    <div></div>
+    <motion.div
+    initial={ {left: '238px'} }
+    whileInView={ {left: '8px'} }
+    transition = {transition}
+
+    ></motion.div>
     <span>Contact</span>
     <p>me</p>
   </div>
 </div>
 
 <div className="right_side">
-  {/* <img className='profile_pic' src={profile_pic} alt=' '/> */}
+   <img className='profile_pic' src={profile_pic} alt=' '/> 
 </div>
 </div>
 </>
