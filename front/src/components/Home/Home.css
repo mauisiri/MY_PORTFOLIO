@@ -43,10 +43,23 @@
 
 .profile_pic {
     position: absolute;
-    right:10rem;
+    right: 8rem;
     top: 10rem;
     width: 30rem;
     filter: drop-shadow(30px 10px 4px #0000003f);
+}
+
+.btn_contact_me {
+    position:absolute;
+    margin-top: 0rem;
+    background-color: transparent;
+    border-radius: 4rem;
+    border-color: transparent;
+    width: 140px;
+    height: 63px;
+    padding: 5px 13px;
+    display:flex;
+    justify-content: flex-start;
 }
 
 .contact_me {

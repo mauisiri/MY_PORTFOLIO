@@ -25,16 +25,18 @@ const Home = () => {
       <span>"All progress takes place outside the comfort zone"</span> 
     </div>
   </div>
-
-  <div className="contact_me">
-    <motion.div
-    initial={ {left: '238px'} }
-    whileInView={ {left: '8px'} }
-    transition = {transition}
-
-    ></motion.div>
-    <span>Contact</span>
-    <p>me</p>
+  <div className="with_btn">
+    <button className="btn_contact_me"></button>
+  
+    <div className="contact_me">
+      <motion.div
+      initial={ {left: '100px'} }
+      whileInView={ {left: '8px'} }
+      transition = {{...transition, type: 'tween'}}
+      ></motion.div>
+      <span>Contact</span>
+      <p>me</p>
+    </div>
   </div>
 </div>
 
