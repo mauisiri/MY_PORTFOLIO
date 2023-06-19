@@ -1,5 +1,5 @@
 .main {
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
@@ -24,11 +24,11 @@
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
-    width:80%;
+    width: 80%;
 }
 
 .languages_box {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 1rem;
@@ -50,7 +50,7 @@
 }
 
 .btn_contact_me {
-    position:absolute;
+    position: absolute;
     margin-top: 0rem;
     background-color: transparent;
     border-radius: 4rem;
@@ -58,7 +58,7 @@
     width: 140px;
     height: 63px;
     padding: 5px 13px;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
 
@@ -72,8 +72,8 @@
     color: var(--light);
     font-weight: 600;
     position: relative;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
     box-shadow: 10px 10px 5px #1f1f1f2f;
 }
@@ -84,15 +84,68 @@
 }
 
 .contact_me>p {
-    margin-left:7px;
+    margin-left: 7px;
 }
 
 .contact_me>div {
-    position:absolute;
+    position: absolute;
     background-color: var(--light);
     width: 5.5em;
     height: 80%;
     left: 8px;
     border-radius: 3rem;
     z-index: 2;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .profile_pic {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .right_side {
+        display: none;
+    }
+
+    .profile_pic {
+        display: none;
+    }
+
+    .left_side {
+        padding: 1.5rem;
+    }
+
+    .my_app_text {
+        display: flex;
+        flex-direction: column;
+        text-overflow: inherit;
+        font-size: 3.5rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .stroke_text, .subtitle {
+        font-size: 3rem;
+    }
+
+    .my_name {
+        flex-direction: row;
+    }
+
+    .with_btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn_contact_me{
+        margin-top: 3rem;
+    }
+
+    .contact_me {
+        margin-top: 3rem;
+    }
+
 }

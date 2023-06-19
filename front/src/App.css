@@ -52,3 +52,11 @@ hr {
 a:link, a:visited, a:active {
   text-decoration:none;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  hr {
+    display:none;
+  }
+}
