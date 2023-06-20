@@ -23,13 +23,11 @@
         align-items:flex-end;
         justify-content: flex-end;
         margin-right: 20px;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
-    .main_header > :nth-child(2) {
+    .main_header > :nth-child(1) {
         position:fixed;
-        right: 2rem;
-        z-index: 99;
     }
 
     .bar_menu {
@@ -37,7 +35,7 @@
         align-items:center;
         justify-content: center;
         margin-top: 10px;
-        background-color: var(--gray);
+        background-color: rgba(255, 255, 255, 0.695);
         border-radius: 5px;
         padding: 1rem;
     }
