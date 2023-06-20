@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='main'>
+      <div className='main' id='home'>
         <div className="left_side">
           <div className="my_app_text">
             <div>

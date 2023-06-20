@@ -16,7 +16,7 @@ import weCheck_projects from '../../assets/projects/weCheck/projectsPage.jpeg'
 
 const Projects = () => {
         return (
-                <div className='projects'>
+                <div className='projects' id='projects'>
                         <hr></hr>
                         <span className='header'>PROJECTS</span>
                         <div className="container">
