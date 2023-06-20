@@ -85,7 +85,6 @@
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 10px 10px 5px #1f1f1f2f;
-    margin-top: 5px;
     font-size: 0.8rem;
     margin-top: 2rem;
 }
@@ -93,8 +92,7 @@
 .project_img>img {
     display:flex;
     margin-left: 2rem;
-    height: 300px;
-    
+    height: 300px;  
     border-radius: 0.5rem;
     box-shadow: 10px 10px 5px #1f1f1f77;
 }
@@ -132,13 +130,18 @@
         flex-direction: row;
     }
 
+    .icon_text {
+        margin-right: 0rem;
+        margin:0.5rem;
+    }
+
     .lang_name {
         margin-top:0.3rem;
     }
 
-    .lang_icon {
-        width: 1rem;
-        height: 1rem;
+    .project_img>img {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .variant {
