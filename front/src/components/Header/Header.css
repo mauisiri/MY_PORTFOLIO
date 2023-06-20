@@ -14,3 +14,27 @@
     display: flex;
     margin: 60px 20px 30px 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .main_header > :nth-child(2) {
+        position:fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+
+    .header_menu {
+        flex-direction: column;
+        background-color: var(gray);
+        padding: 1rem;
+    }
+
+    .header_menu > li {
+        margin: 5px;
+    }
+
+    .main_header>img {
+        height:15px;
+        width:15px;
+        padding: 3rem;
+    }
+}

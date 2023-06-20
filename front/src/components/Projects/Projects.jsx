@@ -35,12 +35,12 @@ const Projects = () => {
                                                                 <button className='btn'>GitHub</button></a>
                                                         <div>
                                                                 <span className='project_icons'>
-                                               <div>          <Html5 />
-                                                                        <Css />
-                                                                        <Js />
-                                                                        </div>        
+                                                                        <div>          <Html5 />
+                                                                                <Css />
+                                                                                <Js />
+                                                                        </div>
                                                                         <div>                                                                    <React_i />
-                                                                        <Node />
+                                                                                <Node />
                                                                         </div>                                                                      </span>
                                                         </div>
                                                 </div>
