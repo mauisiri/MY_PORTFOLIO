@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import Bars from '../../assets/icons/icon_menu.png';
+import CloseBars from '../../assets/icons/icon_menu_close.png';
 import { Link } from "react-scroll";
 
 const Header = () => {
@@ -12,55 +13,77 @@ const Header = () => {
 
             {menuOpened === false && mobile === true ? (
                 <div className='bar_menu'
-
                     onClick={() => setMenuOpened(true)}
                 >
-
-
                     <img src={Bars} alt="" />
                 </div>
             ) : (
-                <ul className='header_menu'>
-                    <li onClick={() => setMenuOpened(false)} className='bar_home'>
-                        <Link to='home'
-                            span={true}
-                            smooth={true}
-                        >Home</Link>
-                    </li>
 
-                    <li onClick={() => setMenuOpened(false)} className='bar_projects'>
-                        <Link to='projects'
-                            span={true}
-                            smooth={true}
-                        >Projects & Skills</Link>
-                    </li>
-{/* 
-                    <li onClick={() => setMenuOpened(false)} className='bar_experience'>
-                        <Link to='experience'
-                            span={true}
+                <div>
+                    <div className='hamburger_menu'>
+                        <img onClick={() => setMenuOpened(false)} className='bar_menu_close' src={CloseBars} alt="" />
+                    </div>
+
+                    <ul className='header_menu'>
+                        <li>
+                            <Link
+                                onClick={() => setMenuOpened(false)}
+                                activeClass="active"
+                                to='home'
+                                spy={true}
+                                smooth={true}
+                            >Home</Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                onClick={() => setMenuOpened(false)}
+                                activeClass="active"
+                                to='projects'
+                                spy={true}
+                                smooth={true}
+                            >Projects & Skills</Link>
+                        </li>
+                        {/* 
+                    <li>
+                        <Link
+                            onClick={() => setMenuOpened(false)}
+                            activeClass="active" to='experience'
+                            spy={true}
                             smooth={true}
                         >Experience</Link>
                     </li>
-                    <li onClick={() => setMenuOpened(false)} className='bar_formation'>
-                        <Link to='formation'
-                            span={true}
+                    <li>
+                        <Link
+                            onClick={() => setMenuOpened(false)}
+                            activeClass="active" to='formation'
+                            spy={true}
                             smooth={true}
                         >Formation</Link>
                     </li>
-                    <li onClick={() => setMenuOpened(false)} className='bar_about_me'>
-                    <Link to='about_me'
-                        span={true}
+                    <li>
+                        <Link
+                            onClick={() => setMenuOpened(false)}
+                            activeClass="active"
+                            to='about_me'
+                        spy={true}
                         smooth={true}
                         >About me</Link>
                     </li>
                      */}
-                    <li onClick={() => setMenuOpened(false)} className='bar_contact'>
-                    <Link to='contact'
-                        span={true}
-                        smooth={true}
-                        >Contact</Link>
-                    </li>
-                </ul>
+                        <li>
+                            <Link
+                                onClick={() => setMenuOpened(false)}
+                                activeClass="active"
+                                to='contact'
+                                spy={true}
+                                smooth={true}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             )}
 
         </div>

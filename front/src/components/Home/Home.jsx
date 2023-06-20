@@ -29,7 +29,6 @@ const Home = () => {
           </div>
           <div className="with_btn">
             <button className="btn_contact_me"></button>
-
             <div className="contact_me">
               <motion.div
                 initial={{ left: '100px' }}

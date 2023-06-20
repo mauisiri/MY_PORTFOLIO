@@ -7,13 +7,18 @@
 
 .header_menu>li:hover {
     cursor: pointer;
-    color: var(--dark);   
+    color: var(--dark);
 }
 
 .home, .skills, .experience, .formation {
     display: flex;
     margin: 60px 20px 30px 20px;
 }
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -28,30 +33,44 @@
 
     .main_header > :nth-child(1) {
         position:fixed;
+        top:0px;
     }
 
-    .bar_menu {
+    .bar_menu, .bar_menu_close {
         display: flex;
         align-items:center;
         justify-content: center;
-        margin-top: 10px;
         background-color: rgba(255, 255, 255, 0.695);
         border-radius: 5px;
         padding: 1rem;
-    }
-    .bar_menu {
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        background-color: var(gray);
         width: 1rem; 
         height: 1rem;
-        margin-top: 10px; 
+        margin-top: 30px; 
+    }
 
+    .hamburger_menu {
+        display: flex;
+        justify-content: flex-end
+    }
+
+   
+
+    .bar_menu_close {
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        width: 2rem; 
+        height: 2rem;
+        padding: 0.5rem;
     }
 
     .header_menu {
+        display: flex;
         flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.695);
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-top: 0px;
     }
 
     .header_menu > div {
@@ -62,6 +81,7 @@
 
     .header_menu > li {
         margin: 5px;
+        list-style-type: none;
     }
 
   
