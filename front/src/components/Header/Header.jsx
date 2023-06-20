@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import './Header.css'
-import Bars from '../../assets/icons/icon_menu.png'
+import React, { useState } from 'react';
+import './Header.css';
+import Bars from '../../assets/icons/icon_menu.png';
+import { Link } from "react-scroll";
 
 const Header = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
@@ -10,20 +11,27 @@ const Header = () => {
         <div className='main_header'>
 
             {menuOpened === false && mobile === true ? (
-                <div>
+                <div className='bar_menu'
+                
+                onClick={()=> setMenuOpened(true)}
+                >
+
+                    
                     <img src={Bars} alt="" />
                 </div>
             ) : (
                 <ul className='header_menu'>
-                    <li className='about'> Home
+                    <li onClick={()=>setMenuOpened(false)}className='about'>
+                        <Link>Home</Link>
                     </li>
-                    <li className='experience'> Projects & Skills
+
+                    <li onClick={()=>setMenuOpened(false)} className='experience'> Projects & Skills
                     </li>
-                    <li className='experience'> Experience
+                    <li onClick={()=>setMenuOpened(false)} className='experience'> Experience
                     </li>
-                    <li className='formation'> Formation
+                    <li onClick={()=>setMenuOpened(false)} className='formation'> Formation
                     </li>
-                    <li className='formation'> About me
+                    <li onClick={()=>setMenuOpened(false)} className='formation'> About me
                     </li>
                 </ul>
             )}
