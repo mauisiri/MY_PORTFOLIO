@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import { motion } from 'framer-motion'
 import profile_pic from '../../assets/personalPic/profile_pic.png'
+import { Link } from "react-scroll";
 
 
 
 const Home = () => {
   const transition = { type: 'spring', duration: 2 }
+
+  const [click,setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+
+  //const closeMenu = () = setClick(false)
 
   return (
     <>
@@ -30,8 +36,16 @@ const Home = () => {
             </div>
           </div>
           <div className="with_btn">
-            <button className="btn_contact_me"></button>
-            <div className="contact_me">
+            <button className="btn_contact_me">
+                  <Link
+                   // onClick={() => closeMenu(true)}
+                    to='contact'
+                    spy={true}
+                    smooth={true}
+                  ></Link>
+
+            </button>
+            <div className="contact_me"> 
               <motion.div
                 initial={{ left: '100px' }}
                 whileInView={{ left: '8px' }}
