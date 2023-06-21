@@ -9,10 +9,10 @@ import { Link } from "react-scroll";
 const Home = () => {
   const transition = { type: 'spring', duration: 2 }
 
-  const [click,setClick] = useState(false)
+  const [click, setClick] = useState(false)
   const handleClick = () => setClick(!click)
 
-  //const closeMenu = () = setClick(false)
+  const closeMenu = () => setClick(false)
 
   return (
     <>
@@ -35,16 +35,18 @@ const Home = () => {
               <span className='quote'>"All progress takes place outside the comfort zone"</span>
             </div>
           </div>
+
           <div className="with_btn">
-            <button className="btn_contact_me">
+
+            <button className="btn_contact_me" onClick={handleClick}>
                   <Link
-                   // onClick={() => closeMenu(true)}
+                    onClick={closeMenu}
                     to='contact'
                     spy={true}
                     smooth={true}
                   ></Link>
-
             </button>
+
             <div className="contact_me"> 
               <motion.div
                 initial={{ left: '100px' }}
