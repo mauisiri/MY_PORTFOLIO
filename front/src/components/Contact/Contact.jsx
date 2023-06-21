@@ -11,7 +11,7 @@ const Contact = () => {
         <span className='header'>CONTACT</span>
         <div className='content'>
             <span>BY PHONE
-                    <li>+34 747-44-20-20</li>
+                    <li>+34 - 747 44 20 20</li>
                     <li>Spain</li>
                     <li><a href=" https://wa.link/iuoipv" target=""> WhatsApp me</a></li>
                     <li>

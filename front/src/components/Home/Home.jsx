@@ -3,6 +3,8 @@ import './Home.css'
 import { motion } from 'framer-motion'
 import profile_pic from '../../assets/personalPic/profile_pic.png'
 
+
+
 const Home = () => {
   const transition = { type: 'spring', duration: 2 }
 
