@@ -1,24 +1,42 @@
 .skills {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 0 2rem;
 }
 
-
-.header{
-    display:flex;
+.header {
+    display: flex;
 }
 
-.content{
-    display:flex;
+.content {
+    display: flex;
     flex-direction: row;
 }
 
 .content>span {
     margin: 40px;
+    font-size:large;
+    font-weight:bold;
 }
 
 .content>span>li {
     list-style: none;
+    font-size:small;
+    font-weight:normal;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .skills > div {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
 }
