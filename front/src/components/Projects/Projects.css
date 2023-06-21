@@ -89,6 +89,11 @@
     margin-top: 2rem;
 }
 
+.project_icons > div{
+    display:flex;
+    flex-direction: row;
+}
+
 .project_img>img {
     display:flex;
     margin-left: 2rem;

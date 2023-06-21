@@ -35,7 +35,8 @@ const Projects = () => {
                                                                 <button className='btn'>GitHub</button></a>
                                                         <div>
                                                                 <span className='project_icons'>
-                                                                        <div>          <Html5 />
+                                                                        <div>
+                                                                                <Html5 />
                                                                                 <Css />
                                                                                 <Js />
                                                                         </div>
