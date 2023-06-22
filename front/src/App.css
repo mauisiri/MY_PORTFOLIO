@@ -56,3 +56,7 @@ a:link, a:visited, a:active {
     display:none;
   }
 }
+
+li {
+  list-style-type: none;
+}

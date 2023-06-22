@@ -5,6 +5,7 @@
 
 .left_side {
     padding: 5rem;
+    width: 100%;
 }
 
 .my_app_text {
@@ -38,13 +39,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 3rem;
+    width:40%;
+    border-color:red;
 }
 
 .profile_pic {
     position: absolute;
     right: 8rem;
-    top: 10rem;
+    top: 6rem;
     width: 30rem;
     filter: drop-shadow(30px 10px 4px #0000003f);
 }
@@ -99,11 +101,11 @@
     z-index: 2;
 }
 
-@media screen and (max-width: 1350px) {
-
-    .profile_pic {
-        display: none;
+@media screen and (max-width: 1300px) {
+    .right_side {
+        display:none;
     }
+    
 }
 
 @media screen and (max-width: 768px) {

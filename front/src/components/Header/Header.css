@@ -6,6 +6,7 @@
     margin-top:0px;
     position:fixed;
     width: 100%;
+    z-index: 100;
 }
 
 .header_menu > li {
@@ -21,7 +22,7 @@
     color: var(--dark);
 }
 
-.home, .skills, .experience, .formation {
+.home {
     display: flex;
     margin: 60px 20px 30px 20px;
 }
@@ -59,6 +60,7 @@ display:none;
         width: 1rem; 
         height: 1rem;
         margin-top: 30px; 
+        z-index:100;
     }
 
     .hamburger_menu {
