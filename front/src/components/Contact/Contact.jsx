@@ -18,7 +18,7 @@ const Contact = () => {
     <div className='contact' id='contact'>
       <hr></hr>
       <span className='header'>CONTACT</span>
-      {/* <span className='header' ref={contactSection}>CONTACT</span> */}
+    
       <div className='content'>
 
         <div className="contact_container">

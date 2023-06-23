@@ -2,20 +2,14 @@ import React, { useRef } from 'react'
 import './Home.css'
 import { motion } from 'framer-motion'
 import profile_pic from '../../assets/personalPic/profile_pic.png'
+import Scroll_button from '../Scroll_button/Scroll_button'
 
 
 
 
 const Home = () => {
   const transition = { type: 'spring', duration: 2 }
-/* 
-  const contactSection = useRef(null);
-  const scrollDown = (ref) => {
-    window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: 'smooth',
-    });
-  }; */
+
 
   return (
     <>
@@ -42,8 +36,7 @@ const Home = () => {
           <div className="with_btn">
 
             <button className="btn_contact_me">
-              {/* <button className="btn_contact_me" onClick={() => scrollDown(contactSection)}> */}
-              
+            <Scroll_button to="contact_me" /> 
             </button>
 
             <div className="contact_me"> 
