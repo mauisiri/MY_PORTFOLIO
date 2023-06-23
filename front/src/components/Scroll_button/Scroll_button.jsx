@@ -8,7 +8,7 @@ function Scroll_button() {
     };
   
     return (
-      <button onClick={handleScrollToContact}>Contact</button>
+      <button className="btn_contact_me" onClick={handleScrollToContact}></button>
     );
   }
 

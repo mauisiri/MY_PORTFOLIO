@@ -40,7 +40,6 @@
     justify-content: flex-end;
     align-items: center;
     width:40%;
-    border-color:red;
 }
 
 .profile_pic {
@@ -53,13 +52,14 @@
 
 .btn_contact_me {
     position: absolute;
-    margin-top: 0rem;
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
     background-color: transparent;
     border-radius: 4rem;
     border-color: transparent;
     width: 140px;
     height: 63px;
-    padding: 5px 13px;
+    padding: 4px 13px;
     display: flex;
     justify-content: flex-start;
     cursor: pointer;
@@ -145,7 +145,7 @@
     }
 
     .btn_contact_me{
-        margin-top: 3rem;
+        margin-top: 1.2rem;
     }
 
     .contact_me {
