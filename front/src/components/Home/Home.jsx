@@ -1,4 +1,6 @@
-import React, { useRef } from 'react'
+import React from 'react'
+import { BrowserRouter as Link } from "react-router-dom";
+
 import './Home.css'
 import { motion } from 'framer-motion'
 import profile_pic from '../../assets/personalPic/profile_pic.png'
@@ -6,16 +8,28 @@ import profile_pic from '../../assets/personalPic/profile_pic.png'
 
 
 
-const Home = () => {
+const Home = ({ contactRef }) => {
   const transition = { type: 'spring', duration: 2 }
-/* 
-  const contactSection = useRef(null);
-  const scrollDown = (ref) => {
+
+
+  const handleScroll = (ref) => {
     window.scrollTo({
-      top: ref.current.offsetTop,
-      behavior: 'smooth',
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
     });
-  }; */
+  };
+
+  /*  
+  const contactSection = useRef(null);
+
+  const goToContactSection = () =>
+    window.scrollTo({
+      top: contactSection.current, behavior: "smooth",
+    })
+  */
+
+
 
   return (
     <>
@@ -41,12 +55,16 @@ const Home = () => {
 
           <div className="with_btn">
 
-            <button className="btn_contact_me">
+          <button className="btn_contact_me">
+          <Link to="/#contact" onClick={() => {handleScroll(contactRef.current);}}></Link>
+{/* 
+            <button className="btn_contact_me" onClick={goToContactSection}>
+ */}
               {/* <button className="btn_contact_me" onClick={() => scrollDown(contactSection)}> */}
-              
+
             </button>
 
-            <div className="contact_me"> 
+            <div className="contact_me">
               <motion.div
                 initial={{ left: '100px' }}
                 whileInView={{ left: '8px' }}

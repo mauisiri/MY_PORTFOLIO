@@ -11,14 +11,15 @@ import git_icon from '../../assets/icons/icon_gitHub.svg'
 
 
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
+
+  /* const contactSection = useRef(null); */
 
 
   return (
-    <div className='contact' id='contact'>
+    <div className='contact' id='contact' ref={ contactRef }>
       <hr></hr>
       <span className='header'>CONTACT</span>
-      {/* <span className='header' ref={contactSection}>CONTACT</span> */}
       <div className='content'>
 
         <div className="contact_container">
@@ -58,7 +59,6 @@ const Contact = () => {
             </div>
           </span>
         </div>
-
       </div>
     </div >
   )
