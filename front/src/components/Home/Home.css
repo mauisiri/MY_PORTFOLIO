@@ -44,7 +44,7 @@
 
 .profile_pic {
     position: absolute;
-    right: 8rem;
+    right: 16rem;
     top: 6rem;
     width: 30rem;
     filter: drop-shadow(30px 10px 4px #0000003f);
@@ -108,13 +108,14 @@
     
 }
 
-@media screen and (max-width: 768px) {
-
-    .right_side {
+@media screen and (max-width: 1452px) {
+    .profile_pic {
         display: none;
     }
+}
 
-    .profile_pic {
+@media screen and (max-width: 768px) {
+    .right_side {
         display: none;
     }
 

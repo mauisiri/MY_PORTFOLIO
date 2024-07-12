@@ -81,6 +81,7 @@
 .project_icons{
     display:flex;
     flex-direction: row;
+    width: 35rem;
     justify-content: center;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);
@@ -124,6 +125,7 @@
 
     .project_icons {
         display:flex;
+        width: 90%;
         align-items: center;
         flex-direction: column;
         font-size: 0.5rem;
