@@ -1,13 +1,15 @@
 import React from 'react'
 import './Skills.css'
+import SectionTitle from '../SectionTitle/SectionTitle';
+
+
 
 
 
 const Skills = () => {
   return (
     <div className='skills'>
-        <hr></hr>
-        <span className='header'>SKILLS</span>
+      <SectionTitle title="SKILLS"/>
         <div className='content'>
             <span>Languages
                     <li>JavaScript</li>

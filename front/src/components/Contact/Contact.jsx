@@ -6,8 +6,7 @@ import mail_icon from '../../assets/icons/icon_mail.svg'
 import web_icon from '../../assets/icons/icon_web.svg'
 import in_icon from '../../assets/icons/icon_in.svg'
 import git_icon from '../../assets/icons/icon_gitHub.svg'
-
-
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 
 
@@ -16,8 +15,7 @@ const Contact = () => {
 
   return (
     <div className='contact' id='contact'>
-      <hr></hr>
-      <span className='header'>CONTACT</span>
+      <SectionTitle title="CONTACT"/>
     
       <div className='content'>
 

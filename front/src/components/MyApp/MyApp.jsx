@@ -5,6 +5,7 @@ import Header from '../Header/Header'
 import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
 import Contact from '../Contact/Contact'
+import Interaction from '../Interaction/Interaction'
 
 const MyApp = () => {
   return (
@@ -13,6 +14,7 @@ const MyApp = () => {
       <Home />
       <Projects />
       <Skills />
+      <Interaction />
       <Contact />
     </div>
   )

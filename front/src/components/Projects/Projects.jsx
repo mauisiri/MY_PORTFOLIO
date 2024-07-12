@@ -10,15 +10,14 @@ import Php from '../Figures/Php'
 import Laravel from '../Figures/Laravel'
 import adopt_home from '../../assets/projects/adoptacoder/home.jpeg'
 import weCheck_projects from '../../assets/projects/weCheck/projectsPage.jpeg'
-
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 
 
 const Projects = () => {
         return (
                 <div className='projects' id='projects'>
-                        <hr></hr>
-                        <span className='header'>PROJECTS</span>
+                        <SectionTitle title="PROJECTS"/>
                         <div className="container">
                                 <div className="projects_container">
                                         <div className='project_card'>
