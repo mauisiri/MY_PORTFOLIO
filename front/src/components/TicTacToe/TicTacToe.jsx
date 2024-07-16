@@ -1,6 +1,5 @@
 import './TicTacToe.css';
-import { useState } from 'react';
-
+import { useState, useEffect  } from 'react';
 import Player from "../Player/Player";
 import GameBoard from "../GameBoard/GameBoard";
 import { WINNING_COMBINATIONS } from "./WinningCombinations";
@@ -26,7 +25,6 @@ function deriveActivePlayer(gameTurns) {
 
   return currentPlayer;
 }
-
 
 function deriveGameBoard(gameTurns) {
   let gameBoard = [...INITIAL_GAME_BOARD.map(array => [...array])];
@@ -55,7 +53,7 @@ function deriveWinner(gameBoard, players) {
         winner = players[firstSquareSymbol];
     }
   }
-
+  
   return winner;
 }
 
@@ -63,10 +61,19 @@ function TicTacToe() {
 
   const [ players, setPlayers ]= useState(PLAYERS);
   const [gameTurns, setGameTurns] = useState([]);
+  const [gameEnded, setGameEnded] = useState(false);
   const activePlayer = deriveActivePlayer(gameTurns);
   const gameBoard = deriveGameBoard(gameTurns);
   const winner = deriveWinner(gameBoard, players)
-  const hasDraw = gameTurns.length ===9 && !winner;
+  const hasDraw = gameTurns.length === 9 && !winner;
+
+  useEffect(() => {
+    if (winner || hasDraw) {
+      setGameEnded(true);
+    } else {
+      setGameEnded(false);
+    }
+  }, [winner, hasDraw]); 
 
 
 
@@ -115,10 +122,15 @@ function TicTacToe() {
           />
         </ol>
         {(winner || hasDraw) && <GameOver winner={winner} onRestart={handleRestart}/>}
+        {gameEnded ? (
+          <GameOver winner={winner} onRestart={handleRestart} />
+        ) : (
           <GameBoard 
-            onSelectSquare = {handleSelectSquare} 
+            onSelectSquare={handleSelectSquare} 
             board={gameBoard} 
-        />
+            gameEnded={gameEnded} // Pasas el estado gameEnded como prop
+          />
+        )}
       </div>
     </main>
   );

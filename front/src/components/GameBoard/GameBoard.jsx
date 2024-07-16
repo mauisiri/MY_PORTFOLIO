@@ -1,6 +1,6 @@
 import React from "react";
 
-const GameBoard = ({onSelectSquare, board }) => {
+const GameBoard = ({onSelectSquare, board, gameEnded }) => {
     return (
         <ol id='game-board'>
             {board.map((row, rowIndex) => (
@@ -8,7 +8,7 @@ const GameBoard = ({onSelectSquare, board }) => {
                     <ol>
                         {row.map((playerSymbol, colIndex) => (
                             <li key={colIndex}>
-                                <button onClick={() => onSelectSquare(rowIndex, colIndex)} disabled={playerSymbol !== null}>     
+                                <button onClick={() => onSelectSquare(rowIndex, colIndex)} disabled={playerSymbol !== null || gameEnded}>    
                                     {playerSymbol}
                                 </button>
                             </li>
