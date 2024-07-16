@@ -20,4 +20,4 @@ const GameBoard = ({onSelectSquare, board }) => {
     );
 }
 
-export default GameBoard
+export default GameBoard;
