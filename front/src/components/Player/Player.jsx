@@ -12,7 +12,7 @@ export default function Player({ initialName, symbol }) {
     setPlayerName(event.target.value);
   }
 
-  let editablePlayerName = <span class="player-name">{playerName}</span>;
+  let editablePlayerName = <span className="player-name">{playerName}</span>;
 
   if (isEditing) {
     editablePlayerName = (
@@ -22,9 +22,9 @@ export default function Player({ initialName, symbol }) {
 
   return (
     <li>
-      <span class="player">
+      <span className="player">
         {editablePlayerName}
-        <span class="player-symbol">{symbol}</span>
+        <span className="player-symbol">{symbol}</span>
       </span>
       <button onClick={handleEditClick}>{isEditing ? "Save" : "Edit"}</button>
     </li>

@@ -1,5 +1,5 @@
 import React from 'react'
-import TikTakToe from "../TikTakToe/TikTakToe";
+import TicTacToe from "../TicTacToe/TicTacToe";
 import SectionTitle from '../SectionTitle/SectionTitle';
 import './Interaction.css';
 
@@ -9,6 +9,7 @@ import './Interaction.css';
     return (
       <div className='interaction'>
           <SectionTitle title="INTERACT WITH SOME APPS"/>
+          <TicTacToe />
       </div>
     )
   }
