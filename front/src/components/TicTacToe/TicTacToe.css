@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
+/* @import url('<link rel="preconnect" href="https://fonts.googleapis.com">'); */
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto Slab', sans-serif;
+
   line-height: 1.5;
 
   color: #ebe7ef;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* -webkit-text-size-adjust: 100%; */
 }
 
 body {
@@ -38,7 +37,7 @@ h1 {
   font-family: 'Caprasimo', cursive;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #2e3d6f;
 }
 
 #game-container {
@@ -46,7 +45,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(#7e9bb6, #46658b);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -69,20 +68,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #4842bc;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #ffffff;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #789ec3;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -91,7 +90,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #413a74;
 }
 
 .player {
@@ -121,7 +120,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: #aaacba;
   text-align: center;
   text-transform: uppercase;
 }
@@ -145,7 +144,7 @@ ol {
 #pre-game button {
   cursor: pointer;
   background: none;
-  color: #f8c031;
+  color: #232656;
   border: none;
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
@@ -176,11 +175,14 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  border-radius:0.5rem;
+  background: #bfc8da;
+  color: #4f5b85;
   font-size: 5rem;
   cursor: pointer;
-  font-family: 'Caprasimo', cursive;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding: 1rem;
 }
 
@@ -199,10 +201,10 @@ ol {
 }
 
 #game-over h2 {
-  font-family: 'Caprasimo', cursive;
+  font-family: "Bebas Neue", sans-serif;  
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #c5bfe6;
   margin: 0;
 }
 
@@ -217,20 +219,20 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgba(89, 89, 88, 0.4);
 }
 
 #game-over button:hover {
-  background: #fcd256;
-  color: #3f3b00;
+  background: #ffffff;
+  color: #3a3a33;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(158, 158, 157, 0.8);
 }
 
 #log {
@@ -292,13 +294,13 @@ ol {
 
 @keyframes pulse-text {
   0% {
-    color: #e1dec7;
+    color: #cac7e1;
   }
   50% {
-    color: #9f9d83;
+    color: #85839f;
   }
   100% {
-    color: #e1dec7;
+    color: #cbc7e1;
   }
 }
 
@@ -316,15 +318,15 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+    border-color: #7b7e8a;
+    box-shadow: 0 0 0 0 rgba(91, 94, 125, 0.4);
   }
   50% {
-    border-color: #f8c031;
+    border-color: #59526e;
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
   100% {
-    border-color: #f6e35a;
+    border-color: #4f5b85;;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
