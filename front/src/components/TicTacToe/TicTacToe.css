@@ -81,7 +81,7 @@ h1 {
   width: 3rem;
   border: none;
   background: none;
-  color: #789ec3;
+  color: #25384a;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -118,9 +118,10 @@ h1 {
   font-size: 1rem;
   width: 10rem;
   border: none;
+  border-radius: 0.5rem;
   padding: 0.5rem;
-  animation: pulse-text 2s infinite;
-  background-color: #aaacba;
+  animation: pulse-text 1s infinite;
+  background-color: #d4d5dc;
   text-align: center;
   text-transform: uppercase;
 }
@@ -344,5 +345,47 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 622px) {
+
+  #game-board button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius:0.25rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    font-style: normal;
+    padding: 0rem;
+  }
+
+  #game-over {
+   
+    height: 200%;
+  }
+  #players li {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .player-name {
+    display:flex;
+    width: 10rem;
+  }
+
+  .player {
+    padding: 0rem;
+    width: 5rem;
+    margin-right: 5rem;
+  }
+
+  #players {
+    flex-direction: column;
+    align-items:stretch;
+    gap: 0rem;
+    margin-left: 0rem;
   }
 }
