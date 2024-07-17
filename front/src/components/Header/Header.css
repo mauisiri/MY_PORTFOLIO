@@ -4,9 +4,9 @@
     color: var(--darkGrey);
     background-color: var(--trWhite);
     margin-top:0px;
-    position:fixed;
+    position:absolute;
     width: 100%;
-    z-index: 100;
+    z-index: 99999;
 }
 
 .header_menu > li {

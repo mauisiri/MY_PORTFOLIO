@@ -47,7 +47,7 @@ h1 {
   border-radius: 6px;
   background: linear-gradient(#7e9bb6, #46658b);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  
+  /* position: relative; */
 }
 
 #game-container h1{
@@ -198,7 +198,7 @@ ol {
 }
 
 #game-over {
-  position: absolute;
+  position: relative;  
   top: 0;
   left: 0;
   width: 100%;
@@ -245,26 +245,6 @@ ol {
   color: #7972a9;;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(158, 158, 157, 0.8);
-}
-
-#log {
-  max-width: 20rem;
-  color: #3f3b00;
-  list-style: none;
-  margin: 2rem auto;
-  padding: 0;
-  text-align: center;
-}
-
-#log li {
-  border-radius: 4px;
-  animation: slide-in-from-left 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  margin: 0.75rem;
-}
-
-#log li.highlighted {
-  background-color: #3f3b00;
-  color: white;
 }
 
 #game-hints {
@@ -371,11 +351,7 @@ ol {
     font-style: normal;
     padding: 0rem;
   }
-
-  #game-over {
-   
-    height: 200%;
-  }
+  
   #players li {
     justify-content: flex-start;
     width: 100%;
