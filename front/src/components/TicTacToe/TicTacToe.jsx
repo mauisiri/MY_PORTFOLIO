@@ -106,7 +106,7 @@ function TicTacToe() {
   return (
     <main>
       <div id="game-container">
-        Tic Tac Toe
+        <h1>Tic Tac Toe</h1>
         <ol id="players" className='highlight-player'>
           <Player 
             initialName={PLAYERS.X} 

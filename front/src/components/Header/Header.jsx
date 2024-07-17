@@ -44,33 +44,17 @@ const Header = () => {
                                 smooth={true}
                             >Projects & Skills</Link>
                         </li>
-                        {/* 
-                    <li>
-                        <Link
-                            onClick={() => setMenuOpened(false)}
-                            activeClass="active" to='experience'
-                            spy={true}
-                            smooth={true}
-                        >Experience</Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={() => setMenuOpened(false)}
-                            activeClass="active" to='formation'
-                            spy={true}
-                            smooth={true}
-                        >Formation</Link>
-                    </li>
-                    <li>
-                        <Link
-                            onClick={() => setMenuOpened(false)}
-                            activeClass="active"
-                            to='about_me'
-                        spy={true}
-                        smooth={true}
-                        >About me</Link>
-                    </li>
-                     */}
+                        <li>
+                            <Link
+                                onClick={() => setMenuOpened(false)}
+                                activeClass="active"
+                                to='interaction'
+                                spy={true}
+                                smooth={true}
+                            >
+                                Interact with
+                            </Link>
+                        </li>
                         <li>
                             <Link
                                 onClick={() => setMenuOpened(false)}

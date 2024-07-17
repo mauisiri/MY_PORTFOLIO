@@ -7,7 +7,7 @@ import './Interaction.css';
 
   const Interaction = () => {
     return (
-      <div className='interaction'>
+      <div className='interaction' id='interaction'>
           <SectionTitle title="INTERACT WITH SOME APPS"/>
           <TicTacToe />
       </div>
