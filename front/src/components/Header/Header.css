@@ -4,9 +4,9 @@
     color: var(--darkGrey);
     background-color: var(--trWhite);
     margin-top:0px;
-    position:absolute;
+    position:fixed;
     width: 100%;
-    z-index: 99999;
+    z-index: 100;
 }
 
 .header_menu > li {
@@ -65,7 +65,7 @@ display:none;
 
     .hamburger_menu {
         display: flex;
-        justify-content: flex-end
+        justify-content: flex-end;
     }
 
     .bar_menu_close {
@@ -100,6 +100,7 @@ display:none;
 
     .bar_menu > img {
         width: 3.5rem; 
-        height: 3.5rem;  
+        height: 3.5rem;
+        padding: 0.5rem;
     }
 }
