@@ -1,9 +1,9 @@
 import './TicTacToe.css';
 import { useState, useEffect  } from 'react';
-import Player from "../Player/Player";
-import GameBoard from "../GameBoard/GameBoard";
+import Player from "./Player";
+import GameBoard from "./GameBoard";
 import { WINNING_COMBINATIONS } from "./WinningCombinations";
-import GameOver from '../GameOver/GameOver';
+import GameOver from './GameOver';
 
 const PLAYERS = {
   X: 'Player 1',
