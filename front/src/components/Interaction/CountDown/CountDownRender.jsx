@@ -5,11 +5,12 @@ import TimerChallenge from "./TimerChallenge";
 
 const CountDownRender = () => {
   return (
-    <div>
+   
     <React.StrictMode>
       <>
-      <CountDown />
+      
       <section className="countDownbody">
+      <CountDown />
         <TimerChallenge title='Easy' targetTime={1}/>
         <TimerChallenge title='Not easy' targetTime={5}/>
         <TimerChallenge title='Getting tough' targetTime={10}/>
@@ -17,7 +18,7 @@ const CountDownRender = () => {
       </section>
       </>
     </React.StrictMode>
-    </div>
+    
    
   );
 }
