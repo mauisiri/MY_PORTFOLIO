@@ -1,0 +1,62 @@
+.carouselInteractionBox {
+    width: 20rem;
+    margin: auto;
+}
+
+.carouselInteractionCard {
+    margin-top: 1rem;
+}
+
+.carouselInteractionCardBox{
+    height: 30rem;
+    color: black;
+}
+
+.carouselInteractionImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--darkGrey);
+}
+
+.carouselInteractionImg > img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.carouselInteractionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+}
+
+.carouselInteractionTitle > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carouselInteractionTitle > button {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--darkGrey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.carouselInteractionTitle > button:hover {
+    background-color: var(--light);
+    font-size: 1.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+}

@@ -47,7 +47,6 @@ h1 {
   border-radius: 6px;
   background: linear-gradient(#7e9bb6, #46658b);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  /* position: relative; */
 }
 
 #game-container h1{
