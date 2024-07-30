@@ -1,0 +1,112 @@
+.carouselInteractionBox {
+    width: 30rem;
+    margin: auto;
+}
+
+.carouselInteractionCard {
+    margin-top: 1rem;
+}
+
+.slick-track {
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-prev, .slick-next {
+    transform: scale(2) !important;
+  }
+
+.carouselInteractionCardBoxWrapper {
+    margin-bottom: 20px;
+  }
+  
+.carouselInteractionCardBox{
+    height: 30rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.carouselInteractionImg {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    color: var(--darkGrey);
+}
+
+.carouselInteractionImg > img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.carouselInteractionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+}
+
+.carouselInteractionTitle > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carouselInteractionTitle > button {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--darkGrey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.4rem;
+}
+
+.carouselInteractionTitle > button:hover {
+    background-color: var(--light);
+    font-size: 1.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+
+  #game-container {
+    margin: 0px;
+  }
+
+  .slick-prev,.slick-next {
+    font-size: 30px; /* adjust the font size to make the arrows bigger */
+  }
+  
+  .slick-prev,.slick-next {
+    transform: scale(2); /* scale the arrows to make them bigger */
+  }

@@ -47,7 +47,6 @@ h1 {
   border-radius: 6px;
   background: linear-gradient(#7e9bb6, #46658b);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  /* position: relative; */
 }
 
 #game-container h1{
@@ -88,7 +87,7 @@ h1 {
 }
 
 #players button {
-  width: 3rem;
+  width: 4rem;
   border: none;
   background: none;
   color: #25384a;
@@ -112,7 +111,7 @@ h1 {
 
 .player-name {
   display: inline-block;
-  width: 10rem;
+  width: 12rem;
   font-size: 1rem;
   color: #e1dec7;
   text-transform: uppercase;

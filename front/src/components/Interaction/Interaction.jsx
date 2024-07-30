@@ -1,15 +1,18 @@
 import React from 'react'
-import TicTacToe from "../TicTacToe/TicTacToe";
-import SectionTitle from '../SectionTitle/SectionTitle';
 import './Interaction.css';
-
+import TicTacToe from "./TicTacToe/TicTacToe";
+import SectionTitle from '../SectionTitle/SectionTitle';
+import CountDownRender from './CountDown/CountDownRender';
+import InteractionCarousel from './InteractionCarousel';
 
 
   const Interaction = () => {
     return (
       <div className='interaction' id='interaction'>
           <SectionTitle title="INTERACT WITH SOME APPS"/>
-          <TicTacToe />
+          <InteractionCarousel />
+          {/* <TicTacToe />
+          <CountDownRender /> */}
       </div>
     )
   }
