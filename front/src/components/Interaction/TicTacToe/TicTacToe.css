@@ -87,7 +87,7 @@ h1 {
 }
 
 #players button {
-  width: 3rem;
+  width: 4rem;
   border: none;
   background: none;
   color: #25384a;
@@ -111,7 +111,7 @@ h1 {
 
 .player-name {
   display: inline-block;
-  width: 10rem;
+  width: 12rem;
   font-size: 1rem;
   color: #e1dec7;
   text-transform: uppercase;
