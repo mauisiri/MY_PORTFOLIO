@@ -21,7 +21,7 @@ export default function CountDownPlayer() {
 
     return (
       <section id="countDownPlayer">
-        <h2>Welcome, {enteredPlayerName}!</h2>
+        <h2>Welcome, {enteredPlayerName ? enteredPlayerName : 'dude'}!</h2>
         <p>
           <input 
             ref={countDownPlayerName} 
