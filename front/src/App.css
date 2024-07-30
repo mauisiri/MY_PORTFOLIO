@@ -25,9 +25,6 @@ background-image: url(./assets/bg-blue.webp);
   gap: 6rem;
   overflow: hidden;
 }
-::-webkit-scrollbar{
-  display: none;
-}
 
 .stroke_text, .subtitle {
   color: transparent;
@@ -52,9 +49,14 @@ a:link, a:visited, a:active {
 
   hr {
     display:none;
+ 
   }
-}
 
-li {
-  list-style-type: none;
+  li {
+    list-style-type: none;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
 }
