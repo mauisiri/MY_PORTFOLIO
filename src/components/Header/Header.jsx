@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Bars from '../../assets/icons/icon_menu.png';
 import CloseBars from '../../assets/icons/icon_menu_close.png';
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
     const [mobile, setMobile] = useState(window.innerWidth <= 768);
+    const location = useLocation();
 
     useEffect(() => {
         const handleResize = () => {
@@ -19,6 +21,13 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const handleClick = (path) => {
+        setMenuOpened(false);
+        if (location.pathname !== '/') {
+            window.location.href = `/${path}`;
+        }
+    };
 
     return (
         <div className='main_header'>
@@ -34,44 +43,44 @@ const Header = () => {
 
                     <ul className='header_menu'>
                         <li>
-                            <Link
-                                onClick={() => setMenuOpened(false)}
+                            <ScrollLink
+                                onClick={() => handleClick('home')}
                                 activeClass="active"
                                 to='home'
                                 spy={true}
                                 smooth={true}
-                            >Home</Link>
+                            >Home</ScrollLink>
                         </li>
                         <li>
-                            <Link
-                                onClick={() => setMenuOpened(false)}
+                            <ScrollLink
+                                onClick={() => handleClick('projects')}
                                 activeClass="active"
                                 to='projects'
                                 spy={true}
                                 smooth={true}
-                            >Projects & Skills</Link>
+                            >Projects & Skills</ScrollLink>
                         </li>
                         <li>
-                            <Link
-                                onClick={() => setMenuOpened(false)}
+                            <ScrollLink
+                                onClick={() => handleClick('interaction')}
                                 activeClass="active"
                                 to='interaction'
                                 spy={true}
                                 smooth={true}
                             >
                                 Interact with
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li>
-                            <Link
-                                onClick={() => setMenuOpened(false)}
+                            <ScrollLink
+                                onClick={() => handleClick('contact')}
                                 activeClass="active"
                                 to='contact'
                                 spy={true}
                                 smooth={true}
                             >
                                 Contact
-                            </Link>
+                            </ScrollLink>
                         </li>
                     </ul>
                 </div>
