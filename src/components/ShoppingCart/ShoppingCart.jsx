@@ -72,19 +72,19 @@ function ShoppingCart() {
   return (
     <div className="myApp">
       <Header />
-      {/* <div className="interaction" id="interaction"> */}
-      <ShopHeader
-        cart={shoppingCart}
-        onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
-      />
-      <Shop>
-        {DUMMY_PRODUCTS.map((product) => (
-          <li key={product.id}>
-            <Product {...product} onAddToCart={handleAddItemToCart} />
-          </li>
-        ))}
-      </Shop>
-      {/* </div> */}
+      <section className="SoppingCart">
+        <ShopHeader
+          cart={shoppingCart}
+          onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
+        />
+        <Shop>
+          {DUMMY_PRODUCTS.map((product) => (
+            <li key={product.id}>
+              <Product {...product} onAddToCart={handleAddItemToCart} />
+            </li>
+          ))}
+        </Shop>
+      </section>
       <Contact />
     </div>
   );

@@ -9,16 +9,28 @@ body {
   font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#31220b, #382e1b);
   color: #f3e7d4;
   min-height: 100vh;
+}
+
+.SoppingCart {
+  display: flex;
+  flex-direction: column;
+  background: #0d0d0d;
+}
+
+#shoppingSection-img {
+  width: 20rem;;
+  margin-top: 5rem;
+  border-radius: 3rem;
 }
 
 #main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 15%;
+  padding: 0rem 15%;
+  background-color: #22201d93;
 }
 
 #main-title {
@@ -28,20 +40,26 @@ body {
 
 #main-title img {
   width: 5rem;
-  margin-right: 1.5rem;
+  margin: 0rem;
+}
+
+#logo {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #edbf68;
+  color: var(--shoppingCartFontColor);
   text-shadow: 0 0 4px rgba(35, 34, 34, 0.4);
   font-size: 2.5rem;
   margin: 0;
 }
 
 #main-header button {
-  background: #edbf68;
+  background: var(--shoppingCartFontColor);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
@@ -51,7 +69,7 @@ h1 {
 }
 
 #main-header button:hover {
-  background: #f5b744;
+  background: var(--shoppingCartFontColor);
 }
 
 #shop {
@@ -113,7 +131,7 @@ h1 {
 }
 
 .product-actions button {
-  background: #f4b115;
+  background: var(--shoppingCartFontColor);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -123,7 +141,7 @@ h1 {
 }
 
 .product-actions button:hover {
-  background: #f5b744;
+  background: var(--shoppingCartFontColor);
 }
 
 #modal {
@@ -182,7 +200,7 @@ h1 {
 }
 
 .cart-item-actions button:hover {
-  background: #f5b744;
+  background: var(--shoppingCartFontColor);
 }
 
 .cart-item-actions button:first-of-type {
