@@ -3,7 +3,7 @@ import './Header.css';
 import Bars from '../../assets/icons/icon_menu.png';
 import CloseBars from '../../assets/icons/icon_menu_close.png';
 import { Link as ScrollLink } from "react-scroll";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
     const handleClick = (path) => {
         setMenuOpened(false);
         if (location.pathname !== '/') {
-            window.location.href = `/${path}`;
+            window.location.href = `/`;
         }
     };
 
@@ -43,44 +43,60 @@ const Header = () => {
 
                     <ul className='header_menu'>
                         <li>
-                            <ScrollLink
-                                onClick={() => handleClick('home')}
-                                activeClass="active"
-                                to='home'
-                                spy={true}
-                                smooth={true}
-                            >Home</ScrollLink>
+                            {location.pathname === '/' ? (
+                                <ScrollLink
+                                    onClick={() => setMenuOpened(false)}
+                                    activeClass="active"
+                                    to='home'
+                                    spy={true}
+                                    smooth={true}
+                                >Home</ScrollLink>
+                            ) : (
+                                <Link to='/' onClick={() => handleClick('home')}>Home</Link>
+                            )}
                         </li>
                         <li>
-                            <ScrollLink
-                                onClick={() => handleClick('projects')}
-                                activeClass="active"
-                                to='projects'
-                                spy={true}
-                                smooth={true}
-                            >Projects & Skills</ScrollLink>
+                            {location.pathname === '/' ? (
+                                <ScrollLink
+                                    onClick={() => setMenuOpened(false)}
+                                    activeClass="active"
+                                    to='projects'
+                                    spy={true}
+                                    smooth={true}
+                                >Projects & Skills</ScrollLink>
+                            ) : (
+                                <Link to='/' onClick={() => handleClick('projects')}>Projects & Skills</Link>
+                            )}
                         </li>
                         <li>
-                            <ScrollLink
-                                onClick={() => handleClick('interaction')}
-                                activeClass="active"
-                                to='interaction'
-                                spy={true}
-                                smooth={true}
-                            >
-                                Interact with
-                            </ScrollLink>
+                            {location.pathname === '/' ? (
+                                <ScrollLink
+                                    onClick={() => setMenuOpened(false)}
+                                    activeClass="active"
+                                    to='interaction'
+                                    spy={true}
+                                    smooth={true}
+                                >
+                                    Interact with
+                                </ScrollLink>
+                            ) : (
+                                <Link to='/' onClick={() => handleClick('interaction')}>Interact with</Link>
+                            )}
                         </li>
                         <li>
-                            <ScrollLink
-                                onClick={() => handleClick('contact')}
-                                activeClass="active"
-                                to='contact'
-                                spy={true}
-                                smooth={true}
-                            >
-                                Contact
-                            </ScrollLink>
+                            {location.pathname === '/' ? (
+                                <ScrollLink
+                                    onClick={() => setMenuOpened(false)}
+                                    activeClass="active"
+                                    to='contact'
+                                    spy={true}
+                                    smooth={true}
+                                >
+                                    Contact
+                                </ScrollLink>
+                            ) : (
+                                <Link to='/' onClick={() => handleClick('contact')}>Contact</Link>
+                            )}
                         </li>
                     </ul>
                 </div>
