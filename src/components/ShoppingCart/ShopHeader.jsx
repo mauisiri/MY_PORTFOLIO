@@ -3,6 +3,7 @@ import CartModal from "./CartModal";
 import "./ShoppingCart.css";
 import Logo from "../../assets/ShoppingCart/roundedLogo.png";
 import ShoppingSection from "../../assets/ShoppingCart/shoppingSection1.jpeg";
+import BackHome from "../../assets/ShoppingCart/backHome.png";
 
 export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
   const modal = useRef();
@@ -28,11 +29,23 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
     <>
       <CartModal
         ref={modal}
+        cartItems={cart.items}
         onUpdateCartItemQuantity={onUpdateCartItemQuantity}
         title="Logo"
         actions={modalActions}
       />
       <header>
+        <div className="backHome-img">
+          <div>
+            <button
+              id="backHome-button"
+              onClick={() => (window.location.href = "/")}
+            >
+              <img id="backHome-img" src={BackHome} alt="Shopping Section" />
+            </button>
+          </div>
+        </div>
+
         <div>
           <img
             id="shoppingSection-img"
@@ -43,7 +56,7 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
         <div id="main-header">
           <div id="main-title">
             <img id="logo" src={Logo} alt="This is the logo" />
-            <h1>The coder shop</h1>
+            <h1>Code Monster</h1>
           </div>
           <p>
             <button onclick={handleOpenCartClick}>Cart ({cartQuantity})</button>

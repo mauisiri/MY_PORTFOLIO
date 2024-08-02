@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../Header/Header";
 import Contact from "../Contact/Contact";
 
 import ShopHeader from './ShopHeader';
@@ -71,7 +70,6 @@ function ShoppingCart() {
 
   return (
     <div className="myApp">
-      <Header />
       <section className="SoppingCart">
         <ShopHeader
           cart={shoppingCart}
