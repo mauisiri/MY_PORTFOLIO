@@ -134,9 +134,10 @@ body {
 }
 
 .product-content h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #fbd392;
   margin-bottom: 0.15rem;
+  font-family: 'Handjet', monospace;
 }
 
 .product-price {

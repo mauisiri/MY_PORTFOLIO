@@ -11,18 +11,18 @@ export const DUMMY_PRODUCTS = [
   {
     id: "p1",
     image: goldenDeveloper,
-    title: "Majestic Vintage Mocha Overcoat",
-    price: 129.99,
+    title: "Golden Senior Developer",
+    price: 6000,
     description:
-      "Channel timeless sophistication with this stunning mocha overcoat. Crafted for the discerning gentleman who appreciates the fine blend of vintage charm and modern elegance."
+      "Boost your application! Essential component for pro applications. Your team will solve issues faster thanks to this monster skills and experience."
   },
   {
     id: "p2",
     image: agile,
-    title: "Enchanting Blush Dream Gown",
-    price: 189.99,
+    title: "Agile team",
+    price: 3000,
     description:
-      "Bask in the glow of elegance with our Enchanting Blush Dream Gown. Embody the regality of a queen with a sweet touch of pink that whispers enchantment. This is the perfect piece for those seeking to create unforgettable moments."
+      "A complete team to develop an Agile strategy. divides the project into phases and emphasizes collaboration and continuous improvement. Inculcated monsters: 2 junior developers, 1 scrum master, 1product owner."
   },
 
   {
@@ -31,7 +31,7 @@ export const DUMMY_PRODUCTS = [
     title: "BootStrap",
     price: 49.99,
     description:
-      "Brace the showers in style! Our Vintage Sunshine Rain Jacket ensures that you stand out, even in the dullest weather. Because rain is never a reason to compromise on your fashion quotient."
+      "A powerful, extensible and feature-packed interface toolkit. Build and customize with Sass, use pre-built components and grid systems, and bring projects to life with powerful JavaScript plugins."
   },
   {
     id: "p4",
@@ -39,30 +39,30 @@ export const DUMMY_PRODUCTS = [
     title: "Hook",
     price: 249.99,
     description:
-      "Step into the boardroom with unmatched confidence in our Classic Merlot Business Suit. Exuding an air of refined class and understated power, it is ideal for the modern executive who values tradition and elegance."
+      "With React Hooks you can extract stateful logic from a component so it can be tested independently and reused. Without writing a class!"
   },
   {
     id: "p4",
     image: conditionalIf,
-    title: "If {}",
-    price: 249.99,
+    title: "if/else",
+    price: 2.99,
     description:
-      "Step into the boardroom with unmatched confidence in our Classic Merlot Business Suit. Exuding an air of refined class and understated power, it is ideal for the modern executive who values tradition and elegance."
+      "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
   },
   {
     id: "p4",
     image: nerd,
-    title: "Nerd",
+    title: "Customed Nerd",
     price: 249.99,
     description:
-      "Step into the boardroom with unmatched confidence in our Classic Merlot Business Suit. Exuding an air of refined class and understated power, it is ideal for the modern executive who values tradition and elegance."
+      "Custom your own nerd monster and choose it's skills. Make it be part of your team and upgrade it from junior to senior as it gains experience."
   },
   {
     id: "p4",
     image: node,
     title: "Node.js",
-    price: 249.99,
+    price: 10.99,
     description:
-      "Step into the boardroom with unmatched confidence in our Classic Merlot Business Suit. Exuding an air of refined class and understated power, it is ideal for the modern executive who values tradition and elegance."
+      "A basic one to start you application. Node.js is a runtime environment used to execute JavaScript outside of the browser."
   },
 ];
