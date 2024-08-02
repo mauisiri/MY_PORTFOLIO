@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Contact from "../Contact/Contact";
+import Contact from "./Contact/Contact";
 
-import ShopHeader from './ShopHeader';
-import Shop from './Shop';
-import Product from './Product';
-import { DUMMY_PRODUCTS } from "./dummy-products";
+import ShopHeader from './ShoppingCart/ShopHeader';
+import Shop from './ShoppingCart/Shop';
+import Product from './ShoppingCart/Product';
+import { DUMMY_PRODUCTS } from "./ShoppingCart/dummy-products";
 
 function ShoppingCart() {
   const [shoppingCart, setShoppingCart] = useState({

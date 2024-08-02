@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import CartModal from "./CartModal";
-import "./ShoppingCart.css";
-import Logo from "../../assets/ShoppingCart/roundedLogo.png";
-import ShoppingSection from "../../assets/ShoppingCart/shoppingSection1.jpeg";
-import BackHome from "../../assets/ShoppingCart/backHome.png";
+import "../ShoppingCart.css";
+import Logo from "../../assets/shoppingCart/logo-rounded.png";
+import ShoppingSection from "../../assets/shoppingCart/shoppingSection1.jpeg";
+import BackHome from "../../assets/shoppingCart/backHome.png";
 
 export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
   const modal = useRef();
