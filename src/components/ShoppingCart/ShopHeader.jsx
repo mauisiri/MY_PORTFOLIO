@@ -56,7 +56,7 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
         <div id="main-header">
           <div id="main-title">
             <img id="logo" src={Logo} alt="This is the logo" />
-            <h1>Code Monster</h1>
+            <h1 className="title">Code Monster</h1>
           </div>
           <p>
             <button onclick={handleOpenCartClick}>Cart ({cartQuantity})</button>
