@@ -42,14 +42,20 @@ body {
 #shoppingSection-img {
   width: 20rem;;
   border-radius: 3rem;
+  margin-top: 8rem;
 }
 
 #main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0rem 15%;
   background-color: #22201d93;
+
 }
 
 #main-title {
@@ -107,6 +113,7 @@ body {
 #products {
   list-style: none;
   margin: 0;
+  margin-top: rem;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -115,11 +122,10 @@ body {
 
 .product {
   height: 100%;
-  background: #5f4e33;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .product img {
@@ -129,7 +135,7 @@ body {
 
 .product-content {
   flex: 1;
-  padding: 0 1rem 0.5rem 1rem;
+  padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,14 +143,32 @@ body {
 
 .product-content h3 {
   font-size: 1.5rem;
-  color: #fbd392;
+  color: var(--shoppingCartFontColor);
   margin-bottom: 0.15rem;
   font-family: 'Handjet', monospace;
 }
 
-.product-content p {
-  font-size: 0.7rem;
+.product-overlay {
+  width: 22%;
+  height: 33%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: rgba(85, 76, 44, 0.708);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.product:hover .product-overlay {
+  opacity: 1; /* Show on hover */
+}
+
+.product-overlay p {
+  color: white;
+  font-size: 1rem;
+  word-wrap: break-word;
+  padding: 0.5rem;
 }
 
 .product-price {
