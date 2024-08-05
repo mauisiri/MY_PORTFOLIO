@@ -81,9 +81,11 @@ body {
   background: var(--shoppingCartFontColor);
   border: none;
   border-radius: 5px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.2rem 1rem;
   color: #201e1a;
-  font-size: 1.25rem;
+  font-size: 1.7rem;
+  font-family: 'Handjet', monospace;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -160,18 +162,21 @@ body {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  font-family: 'Handjet', monospace;
+  font-weight: 600;
   color: #201e1a;
   font-size: 1rem;
   cursor: pointer;
 }
 
 .product-actions button:hover {
-  background: var(--shoppingCartFontColor);
+  background: var(--shoppingCartFontColor-blue);
 }
 
 #modal {
   width: 30%;
-  background: #d3b17b;
+  background: #c3b76d;
   border: none;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -183,10 +188,11 @@ body {
 }
 
 #modal h2 {
-  font-size: 1.5rem;
-  color: #4f3807;
+  font-size: 2.5rem;
+  color: var(----shoppingCartFontColor-blue);
   text-transform: uppercase;
   margin: 0;
+  font-family: 'Handjet', monospace;
 }
 
 #cart-items {
@@ -203,7 +209,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: #fbd392;
+  background: #22201d30;
   border-radius: 5px;
   font-size: 0.9rem;
 }
@@ -219,13 +225,13 @@ body {
   background: transparent;
   border: none;
   border-radius: 5px;
-  color: #201e1a;
+  color: var(--shoppingCartFontColor);
   cursor: pointer;
   font-size: 1.1rem;
 }
 
 .cart-item-actions button:hover {
-  background: var(--shoppingCartFontColor);
+  background: #22201d93;
 }
 
 .cart-item-actions button:first-of-type {
@@ -253,21 +259,22 @@ body {
 }
 
 #modal form button:hover {
-  color: #453719;
+  background: #201e1a15;
 }
 
 #modal form button:last-of-type {
-  background: #271e07;
+  background: var(--shoppingCartFontColor);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
-  color: #f9efda;
+  color: #201e1a;
   font-size: 1rem;
   cursor: pointer;
 }
 
 #modal form button:last-of-type:hover {
-  background: #382e1b;
+  background: var(--shoppingCartFontColor-blue);
+  font-weight: 800;
 }
 
 #checkout {

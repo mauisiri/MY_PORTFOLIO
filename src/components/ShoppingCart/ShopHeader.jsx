@@ -6,7 +6,7 @@ import ShoppingSection from "../../assets/shoppingCart/shoppingSection1.jpeg";
 import BackHome from "../../assets/shoppingCart/backHome.png";
 import { CartContext } from "./ShoppingCartContext";
 
-export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
+export default function ShopHeader() {
   const modal = useRef();
   const { items } = useContext(CartContext)
 
@@ -31,7 +31,7 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
     <>
       <CartModal
         ref={modal}
-        title="Logo"
+        title="My cart"
         actions={modalActions}
       />
       <header>
