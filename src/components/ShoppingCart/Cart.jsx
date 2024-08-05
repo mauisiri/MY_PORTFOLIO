@@ -12,7 +12,7 @@ export default function Cart() {
   
     return (
       <div id="cart">
-        {items.length === 0 && <p>No items in cart!</p>}
+        {items.length === 0 && <p>No items in your cart!</p>}
         {items.length > 0 && (
           <ul id="cart-items">
             {items.map((item) => {
