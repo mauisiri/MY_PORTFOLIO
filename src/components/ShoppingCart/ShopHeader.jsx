@@ -59,7 +59,7 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
             <h1 className="title">Code Monster</h1>
           </div>
           <p>
-            <button onclick={handleOpenCartClick}>Cart ({cartQuantity})</button>
+            <button onClick={handleOpenCartClick}>Cart ({cartQuantity})</button>
           </p>
         </div>
       </header>

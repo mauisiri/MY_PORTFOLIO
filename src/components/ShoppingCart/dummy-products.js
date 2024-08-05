@@ -42,7 +42,7 @@ export const DUMMY_PRODUCTS = [
       "With React Hooks you can extract stateful logic from a component so it can be tested independently and reused. Without writing a class!"
   },
   {
-    id: "p4",
+    id: "p5",
     image: conditionalIf,
     title: "if/else",
     price: 2.99,
@@ -50,7 +50,7 @@ export const DUMMY_PRODUCTS = [
       "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
   },
   {
-    id: "p4",
+    id: "p6",
     image: nerd,
     title: "Customed Nerd",
     price: 249.99,
@@ -58,7 +58,7 @@ export const DUMMY_PRODUCTS = [
       "Custom your own nerd monster and choose it's skills. Make it be part of your team and upgrade it from junior to senior as it gains experience."
   },
   {
-    id: "p4",
+    id: "p7",
     image: node,
     title: "Node.js",
     price: 10.99,

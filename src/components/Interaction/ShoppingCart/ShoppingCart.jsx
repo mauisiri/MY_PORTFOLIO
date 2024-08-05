@@ -72,7 +72,6 @@ function ShoppingCart() {
   return (
     <div className="myApp">
       <Header />
-      {/* <div className="interaction" id="interaction"> */}
       <ShopHeader
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
@@ -84,7 +83,6 @@ function ShoppingCart() {
           </li>
         ))}
       </Shop>
-      {/* </div> */}
       <Contact />
     </div>
   );
