@@ -1,14 +1,16 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import CartModal from "./CartModal";
 import "../ShoppingCart.css";
 import Logo from "../../assets/shoppingCart/logo-rounded.png";
 import ShoppingSection from "../../assets/shoppingCart/shoppingSection1.jpeg";
 import BackHome from "../../assets/shoppingCart/backHome.png";
+import { CartContext } from "./ShoppingCartContext";
 
 export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
   const modal = useRef();
+  const { items } = useContext(CartContext)
 
-  const cartQuantity = cart.items.length;
+  const cartQuantity = items.length;
 
   function handleOpenCartClick() {
     modal.current.open();
@@ -29,8 +31,6 @@ export default function ShopHeader({ cart, onUpdateCartItemQuantity }) {
     <>
       <CartModal
         ref={modal}
-        cartItems={cart.items}
-        onUpdateCartItemQuantity={onUpdateCartItemQuantity}
         title="Logo"
         actions={modalActions}
       />
