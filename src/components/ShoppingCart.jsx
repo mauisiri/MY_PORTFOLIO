@@ -13,7 +13,7 @@ function ShoppingCart() {
 
   function handleAddItemToCart(id) {
     setShoppingCart((prevShoppingCart) => {
-      const updatedItems = [prevShoppingCart.items];
+      const updatedItems = [...prevShoppingCart.items];
 
       const existingCartItemIndex = updatedItems.findIndex(
         (vartItem) => existingCartItemIndex.id === id
