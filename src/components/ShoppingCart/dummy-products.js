@@ -1,11 +1,11 @@
-import agile from "../../assets/shoppingCart/products/agile.jpeg";
-import bootStrap from "../../assets/shoppingCart/products/bootStrap.jpeg";
-import goldenDeveloper from "../../assets/shoppingCart/products/goldenDeveloper.jpeg";
-import hook from "../../assets/shoppingCart/products/hook.jpeg";
-import junior from "../../assets/shoppingCart/products/junior.jpeg";
-import conditionalIf from "../../assets/shoppingCart/products/if_else.jpeg";
-import nerd from "../../assets/shoppingCart/products/nerd.jpeg";
-import node from "../../assets/shoppingCart/products/node.jpeg";
+import agile from "../../assets/ShoppingCart/products/agile.jpeg";
+import bootStrap from "../../assets/ShoppingCart/products/bootStrap.jpeg";
+import goldenDeveloper from "../../assets/ShoppingCart/products/goldenDeveloper.jpeg";
+import hook from "../../assets/ShoppingCart/products/hook.jpeg";
+import junior from "../../assets/ShoppingCart/products/junior.jpeg";
+import conditionalIf from "../../assets/ShoppingCart/products/if_else.jpeg";
+import nerd from "../../assets/ShoppingCart/products/nerd.jpeg";
+import node from "../../assets/ShoppingCart/products/node.jpeg";
 
 
 export const DUMMY_PRODUCTS = [

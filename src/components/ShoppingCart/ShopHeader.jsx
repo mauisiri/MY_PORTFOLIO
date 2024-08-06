@@ -1,9 +1,9 @@
 import { useRef, useContext } from "react";
 import CartModal from "./CartModal";
 import "../ShoppingCart.css";
-import Logo from "../../assets/shoppingCart/logo-rounded.png";
-import ShoppingSection from "../../assets/shoppingCart/shoppingSection1.jpeg";
-import BackHome from "../../assets/shoppingCart/backHome.png";
+import Logo from "../../assets/ShoppingCart/logo-rounded.png";
+import ShoppingSection from "../../assets/ShoppingCart/shoppingSection1.jpeg";
+import BackHome from "../../assets/ShoppingCart/backHome.png";
 import { CartContext } from "./ShoppingCartContext";
 
 export default function ShopHeader() {
