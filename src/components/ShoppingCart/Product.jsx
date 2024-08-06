@@ -14,7 +14,6 @@ export default function Product({ id, image, title, price, description }) {
         <div>
           <h3>{title}</h3>
           <p className="product-price">{price}€</p>
-          {/* <p>{description}</p> */}
         </div>
         <p className="product-actions">
           <button onClick={() => addItemToCart(id)}>Add</button>

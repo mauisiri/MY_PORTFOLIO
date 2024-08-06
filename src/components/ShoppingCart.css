@@ -129,6 +129,29 @@ body {
   border-radius: 6px;
 }
 
+.product-overlay {
+  width: 22%;
+  height: 33%;
+  border-radius: 6px;
+  position: absolute;
+  background-color: rgba(85, 76, 44, 0.708);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-overlay p {
+  color: white;
+  font-size: 1rem;
+  word-wrap: break-word;
+  padding: 0.5rem;
+}
+
 .product-content {
   flex: 1;
   padding: 0 1rem 0 1rem;
@@ -144,29 +167,6 @@ body {
   font-family: 'Handjet', monospace;
 }
 
-.product-overlay {
-  width: 22%;
-  height: 33%;
-  border-radius: 6px;
-  position: absolute;
-  background-color: rgba(85, 76, 44, 0.708);
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.product:hover .product-overlay {
-  opacity: 1; /* Show on hover */
-}
-
-.product-overlay p {
-  color: white;
-  font-size: 1rem;
-  word-wrap: break-word;
-  padding: 0.5rem;
-}
-
 .product-price {
   font-size: 1rem;
   color: #d1b68b;
@@ -175,6 +175,7 @@ body {
 
 .product-actions {
   text-align: right;
+  margin-top: 0px;
 }
 
 .product-actions button {

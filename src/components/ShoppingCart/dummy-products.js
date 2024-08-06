@@ -20,7 +20,7 @@ export const DUMMY_PRODUCTS = [
   {
     id: "p5",
     image: junior,
-    title: "if/else",
+    title: "Junior developer",
     price: 2000,
     description:
       "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
@@ -28,7 +28,7 @@ export const DUMMY_PRODUCTS = [
   {
     id: "p2",
     image: agile,
-    title: "Agile team",
+    title: "Agile development team",
     price: 4000,
     description:
       "A complete team to develop an Agile strategy. divides the project into phases and emphasizes collaboration and continuous improvement. Inculcated monsters: 2 junior developers, 1 scrum master, 1product owner."
@@ -53,7 +53,7 @@ export const DUMMY_PRODUCTS = [
   {
     id: "p6",
     image: conditionalIf,
-    title: "if/else",
+    title: "if / else",
     price: 2.99,
     description:
       "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
@@ -61,7 +61,7 @@ export const DUMMY_PRODUCTS = [
   {
     id: "p7",
     image: nerd,
-    title: "Customed Nerd",
+    title: "Custom Nerd",
     price: 549.99,
     description:
       "Custom your own nerd monster and choose it's skills. Make it be part of your team and upgrade it from junior to senior as it gains experience."
