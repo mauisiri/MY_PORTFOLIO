@@ -2,7 +2,8 @@ import agile from "../../assets/shoppingCart/products/agile.jpeg";
 import bootStrap from "../../assets/shoppingCart/products/bootStrap.jpeg";
 import goldenDeveloper from "../../assets/shoppingCart/products/goldenDeveloper.jpeg";
 import hook from "../../assets/shoppingCart/products/hook.jpeg";
-import conditionalIf from "../../assets/shoppingCart/products/if.jpeg";
+import junior from "../../assets/shoppingCart/products/junior.jpeg";
+import conditionalIf from "../../assets/shoppingCart/products/if_else.jpeg";
 import nerd from "../../assets/shoppingCart/products/nerd.jpeg";
 import node from "../../assets/shoppingCart/products/node.jpeg";
 
@@ -17,10 +18,18 @@ export const DUMMY_PRODUCTS = [
       "Boost your application! Essential component for pro applications. Your team will solve issues faster thanks to this monster skills and experience."
   },
   {
+    id: "p5",
+    image: junior,
+    title: "if/else",
+    price: 2000,
+    description:
+      "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
+  },
+  {
     id: "p2",
     image: agile,
     title: "Agile team",
-    price: 3000,
+    price: 4000,
     description:
       "A complete team to develop an Agile strategy. divides the project into phases and emphasizes collaboration and continuous improvement. Inculcated monsters: 2 junior developers, 1 scrum master, 1product owner."
   },
@@ -37,12 +46,12 @@ export const DUMMY_PRODUCTS = [
     id: "p4",
     image: hook,
     title: "Hook",
-    price: 249.99,
+    price: 29.99,
     description:
       "With React Hooks you can extract stateful logic from a component so it can be tested independently and reused. Without writing a class!"
   },
   {
-    id: "p5",
+    id: "p6",
     image: conditionalIf,
     title: "if/else",
     price: 2.99,
@@ -50,15 +59,15 @@ export const DUMMY_PRODUCTS = [
       "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
   },
   {
-    id: "p6",
+    id: "p7",
     image: nerd,
     title: "Customed Nerd",
-    price: 249.99,
+    price: 549.99,
     description:
       "Custom your own nerd monster and choose it's skills. Make it be part of your team and upgrade it from junior to senior as it gains experience."
   },
   {
-    id: "p7",
+    id: "p8",
     image: node,
     title: "Node.js",
     price: 10.99,

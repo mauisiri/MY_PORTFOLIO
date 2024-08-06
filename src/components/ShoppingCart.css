@@ -18,31 +18,11 @@ body {
   flex-direction: column;
   background: #0d0d0d;
 }
-#backHome-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  margin-top: 0rem;
-}
-
-.backHome-img {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin: -3rem;
-}
-
-#backHome-img {
-  width: 6rem;;
-  margin-top: 5rem;
-  border-radius: 3rem;
-}
 
 #shoppingSection-img {
   width: 20rem;;
   border-radius: 3rem;
-  margin-top: 8rem;
+  margin: 10rem;
 }
 
 #main-header {
@@ -58,6 +38,12 @@ body {
 
 }
 
+#logo {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
 #main-title {
   display: flex;
   align-items: center;
@@ -66,12 +52,6 @@ body {
 #main-title img {
   width: 5rem;
   margin: 0rem;
-}
-
-#logo {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
 }
 
 .title {
@@ -83,8 +63,14 @@ body {
   margin: 0;
 }
 
+.right-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #main-header button {
-  background: var(--shoppingCartFontColor);
+  /* background: var(--shoppingCartFontColor); */
   border: none;
   border-radius: 5px;
   padding: 0.2rem 1rem;
@@ -95,8 +81,19 @@ body {
   cursor: pointer;
 }
 
-#main-header button:hover {
+#cart-button {
   background: var(--shoppingCartFontColor);
+}
+
+#backHome-button {
+  background: none;
+}
+
+#backHome-img {
+  width: 6rem;;
+  border-radius: 3rem;
+  background: none;
+  margin-top: 1rem;
 }
 
 #shop {

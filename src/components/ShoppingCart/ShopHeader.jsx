@@ -8,7 +8,7 @@ import { CartContext } from "./ShoppingCartContext";
 
 export default function ShopHeader() {
   const modal = useRef();
-  const { items } = useContext(CartContext)
+  const { items } = useContext(CartContext);
 
   const cartQuantity = items.length;
 
@@ -29,23 +29,8 @@ export default function ShopHeader() {
 
   return (
     <>
-      <CartModal
-        ref={modal}
-        title="My cart"
-        actions={modalActions}
-      />
+      <CartModal ref={modal} title="My cart" actions={modalActions} />
       <header>
-        <div className="backHome-img">
-          <div>
-            <button
-              id="backHome-button"
-              onClick={() => (window.location.href = "/")}
-            >
-              <img id="backHome-img" src={BackHome} alt="Shopping Section" />
-            </button>
-          </div>
-        </div>
-
         <div>
           <img
             id="shoppingSection-img"
@@ -58,9 +43,27 @@ export default function ShopHeader() {
             <img id="logo" src={Logo} alt="This is the logo" />
             <h1 className="title">Code Monster</h1>
           </div>
-          <p>
-            <button onClick={handleOpenCartClick}>Cart ({cartQuantity})</button>
-          </p>
+          <div className='right-buttons'>
+            <p>
+              <button 
+                id='cart-button' 
+                onClick={handleOpenCartClick}>
+                Cart ({cartQuantity})
+              </button>
+            </p>
+            <div className="backHome-img">
+                <button
+                  id="backHome-button"
+                  onClick={() => (window.location.href = "/")}
+                >
+                  <img
+                    id="backHome-img"
+                    src={BackHome}
+                    alt="Shopping Section"
+                  />
+                </button>
+            </div>
+          </div>
         </div>
       </header>
     </>
