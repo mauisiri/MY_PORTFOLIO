@@ -20,8 +20,11 @@ function ShoppingCart() {
             </li>
           ))}
         </Shop>
+        <div className='shoppingCart-footer'>
+        
+      </div>
       </section>
-      <Contact />
+      
     </div>
     </CartContextProvider>
   );

@@ -22,7 +22,7 @@ body {
 #shoppingSection-img {
   width: 20rem;;
   border-radius: 3rem;
-  margin: 10rem;
+  margin-top: 10rem;
 }
 
 #main-header {
@@ -34,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   padding: 0rem 15%;
-  background-color: #22201d93;
+  background-color: #221e18dc;
 
 }
 
@@ -70,7 +70,6 @@ body {
 }
 
 #main-header button {
-  /* background: var(--shoppingCartFontColor); */
   border: none;
   border-radius: 5px;
   padding: 0.2rem 1rem;
@@ -313,6 +312,11 @@ body {
   border-radius: 5px;
   border: none;
   margin-bottom: 1rem;
+}
+
+.shoppingCart-footer {
+  display: flex;
+  height: 20rem;
 }
 
 @keyframes fade-slide-in-from-top {
