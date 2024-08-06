@@ -20,9 +20,7 @@ function ShoppingCart() {
             </li>
           ))}
         </Shop>
-        <div className='shoppingCart-footer'>
-        
-      </div>
+        <div className='shoppingCart-footer'></div>
       </section>
       
     </div>

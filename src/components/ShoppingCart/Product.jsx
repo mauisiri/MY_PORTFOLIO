@@ -6,9 +6,11 @@ export default function Product({ id, image, title, price, description }) {
 
   return (
     <article className="product">
+      <div>
       <img src={image} alt={title} />
       <div className="product-overlay">
         <p>{description}</p>
+      </div>
       </div>
       <div className="product-content">
         <div>
