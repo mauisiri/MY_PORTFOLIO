@@ -92,7 +92,5 @@ li {
     .contact > div {
         display: flex;
         flex-direction: column;
-        margin: -30px;
-        margin-left: 20%;
     }
 }
