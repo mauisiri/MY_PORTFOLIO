@@ -19,15 +19,9 @@
 .slick-prev, .slick-next {
     transform: scale(2) !important;
   }
-
-.carouselInteractionCardBoxWrapper {
-    margin-bottom: 20px;
-  }
   
 .carouselInteractionCardBox{
-    height: 30rem;
-    color: black;
-    margin-bottom: 20px;
+    height: 100%;
 }
 
 .carouselInteractionImg {
@@ -39,8 +33,8 @@
 }
 
 .carouselInteractionImg > img{
-    height: 20rem;
-    width: 20rem;
+  height: 100%;
+  width: 100%;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -113,4 +107,25 @@
   
   .slick-prev,.slick-next {
     transform: scale(2); 
+  }
+
+  .slick-slide, .slick-active, .slick-current{
+    margin-bottom:3rem;
+  }
+
+  @media screen and (max-width: 605px) {
+    
+    .interaction {
+      margin: 20px;
+      align-items: center;
+    }
+    
+    .carouselInteractionBox {
+      width: 80%;
+      margin: 0;
+    }
+
+    .slick-slide, .slick-active, .slick-current{
+      margin-bottom: 0rem;
+    }
   }
