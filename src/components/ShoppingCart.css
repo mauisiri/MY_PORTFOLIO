@@ -353,6 +353,13 @@ body {
   height: 20rem;
 }
 
+@media screen  and (max-width: 1585px) {
+
+  #modal {
+    width: 80%;
+  }
+}
+
 @media screen  and (max-width: 770px) {
   .right-buttons {
     flex-direction: column-reverse;
