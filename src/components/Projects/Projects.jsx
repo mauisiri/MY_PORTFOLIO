@@ -23,7 +23,7 @@ const Projects = () => {
             <div className="text">
               <span className="project_title">Code Monster</span>
               <span className="project_description">
-                The perfect e-commerce for tech enterprises!. Press on the link and buy everything you need to create an amazing app for your company.
+                The perfect responsive e-commerce for tech enterprises! Press on the link and add to your cart everything you need to create an amazing app for your company. Hooks are the main characters of this project.
               </span>
 
               <a

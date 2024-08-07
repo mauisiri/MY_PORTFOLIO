@@ -85,8 +85,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 90vh;
+    max-width: 90%;
+    max-height: 80%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -94,9 +94,15 @@
     overflow-y: auto;
     margin-top: 20px;
   }
+
   
   .popup-content {
     padding: 20px;
+    /* Removed unnecessary margin */
+    max-width: calc(100vw - 40px); /* Account for padding */
+    max-height: calc(100vh - 40px); /* Account for padding */
+    border-radius: 4px; /* Add a subtle border radius */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a light shadow */
   }
 
   #game-container {
