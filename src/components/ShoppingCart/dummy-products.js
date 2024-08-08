@@ -31,7 +31,7 @@ export const DUMMY_PRODUCTS = [
     title: "Agile development team",
     price: 4000,
     description:
-      "A complete team to develop an Agile strategy. divides the project into phases and emphasizes collaboration and continuous improvement. Inculcated monsters: 2 junior developers, 1 scrum master, 1product owner."
+      "A complete team to develop an Agile strategy. divides the project into phases and emphasizes collaboration and continuous improvement. Inculcated monsters: 2 junior developers, 1 scrum master, 1 product owner."
   },
 
   {

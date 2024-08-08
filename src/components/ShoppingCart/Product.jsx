@@ -14,8 +14,8 @@ export default function Product({ id, image, title, price, description }) {
   return (
     <article className="product">
       <div className="img-overlay-box">
-        <img src={image} alt={title} />
-        {/* <p className="product-overlay">{description}</p> */}
+          <img src={image} alt={title} />
+          <p className="product-overlay">{description}</p>
       </div>
       <div className="product-content">
         <div>

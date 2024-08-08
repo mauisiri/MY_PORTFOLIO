@@ -27,7 +27,7 @@ const Projects = () => {
               </span>
 
               <a
-                href="/shoppingCart"
+                href="/shoppingcart"
                 target="_blank"
                 rel="Shopping Cart"
               >
