@@ -24,22 +24,23 @@ export default function Product({ id, image, title, price, description }) {
           <p className="product-price">{price}€</p>
         </div>
         <p className="product-actions">
-          {/* INFO */}
-          <div className="product-info-btn-div">
-            <button
-              className="product-info-button"
-              // onClick={() => setIsProductInfoOpen(true)}
-            >
-              <img src={info} alt="Product Info" />
-            </button>
-          </div>
-
           <div>
-            <button onClick={handleAddToCart}>Add</button>
+            <div className="card-buttons">
+              <button
+                className="product-info-button"
+                // onClick={() => setIsProductInfoOpen(true)}
+              >
+                <img src={info} alt="Product Info" />
+              </button>
 
-            <div className="animation-container">
-              {" "}
-              {showAnimation && <span className="animation">+1</span>}
+              <button className="add-button" onClick={handleAddToCart}>
+                Add
+              </button>
+
+              <div className="animation-container">
+                {" "}
+                {showAnimation && <span className="animation">+1</span>}
+              </div>
             </div>
           </div>
         </p>

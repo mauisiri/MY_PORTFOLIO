@@ -44,18 +44,6 @@ body {
   height: 120px;
 }
 
-.product-info-btn-div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.product-info-button {
-  background-color: transparent;
-  border-color: transparent;
-  width: 45px;
-  height: 45px;
-}
-
 #main-title {
   display: flex;
   align-items: center;
@@ -196,16 +184,32 @@ margin: 25px;
   margin: 0;
 }
 
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .product-actions {
   text-align: right;
   margin-top: 0px;
 }
 
-.product-info-btn-div {
-  display: none;
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
-.product-actions button {
+.product-info-button {
+  display: none;
+  background-color: transparent;
+  border-color: transparent;
+  width: 45px;
+  height: 45px;
+}
+
+.add-button {
   background: var(--shoppingCartFontColor);
   border: none;
   border-radius: 5px;
@@ -377,10 +381,17 @@ margin: 25px;
   height: 20rem;
 }
 
-@media screen  and (max-width: 1585px) {
+.
 
+@media screen  and (max-width: 1585px) {
   #modal {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-info-button {
+    display: flex; /* Show on smaller screens */
   }
 }
 
@@ -413,16 +424,3 @@ margin: 25px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .product-info-btn-div {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .product-info-button {
-    background-color: transparent;
-    border-color: transparent;
-    width: 45px;
-    height: 45px;
-  }
-}
