@@ -35,12 +35,25 @@ body {
   width: 100%;
   padding: 0rem 15%;
   background-color: #221e18dc;
+  z-index: 999;
 }
 
 #logo {
   border-radius: 50%;
   width: 120px;
   height: 120px;
+}
+
+.product-info-btn-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-info-button {
+  background-color: transparent;
+  border-color: transparent;
+  width: 45px;
+  height: 45px;
 }
 
 #main-title {
@@ -126,6 +139,7 @@ body {
 
 .img-overlay-box {
   display:flex;
+  margin: 0 !important;
 }
 
 .product img {
@@ -136,10 +150,6 @@ body {
 .img-overlay-box {
 position: relative;
 margin: 25px;
-}
-
-.img-overlay-box p  {
-
 }
 
 .product-overlay {
@@ -155,7 +165,7 @@ margin: 25px;
   display: flex;
   align-items: center;
   opacity: 0;
- margin: 0;
+  margin: 0;
   color: white;
   font-size: 1rem;
   padding: 0.8rem;
@@ -189,6 +199,10 @@ margin: 25px;
 .product-actions {
   text-align: right;
   margin-top: 0px;
+}
+
+.product-info-btn-div {
+  display: none;
 }
 
 .product-actions button {
@@ -396,5 +410,19 @@ margin: 25px;
     font-size: 1rem;
     border-radius: 22px;
     font-weight:bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-info-btn-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .product-info-button {
+    background-color: transparent;
+    border-color: transparent;
+    width: 45px;
+    height: 45px;
   }
 }
