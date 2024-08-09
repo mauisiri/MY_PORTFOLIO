@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import "./Projects.css";
 import Html5 from "../Figures/Html5";
 import Css from "../Figures/Css";
@@ -14,6 +15,14 @@ import weCheck_projects from "../../assets/projects/weCheck/projectsPage.jpeg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Projects = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToShoppingCart = () => {
+    navigate('/shoppingcart');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="projects" id="projects">
       <SectionTitle title="PROJECTS" />
@@ -23,13 +32,18 @@ const Projects = () => {
             <div className="text">
               <span className="project_title">Code Monster</span>
               <span className="project_description">
-                The perfect responsive e-commerce for tech enterprises! Press on the link and add to your cart everything you need to create an amazing app for your company. Hooks are the main characters of this project.
+                The perfect responsive e-commerce for tech enterprises! Press on
+                the link and add to your cart everything you need to create an
+                amazing app for your company. Hooks are the main characters of
+                this project.
               </span>
 
               <a
-                href="/shoppingcart"
                 target="_blank"
                 rel="Shopping Cart"
+                onClick={() => {
+                  navigateToShoppingCart();
+                }}
               >
                 <button className="btn">Website</button>
               </a>

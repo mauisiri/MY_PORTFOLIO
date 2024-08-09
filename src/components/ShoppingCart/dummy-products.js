@@ -23,7 +23,7 @@ export const DUMMY_PRODUCTS = [
     title: "Junior developer",
     price: 2000,
     description:
-      '"There is no senior without junior". Juniors can manage foundational and intermediate tasks, enabling seniors to focus on more intricate challenges. They have the potential to develop into highly skilled software developers, which can benefit the organization in the long term.'
+      '"There is no senior without junior". Juniors can manage foundational and intermediate tasks, enabling seniors to focus on more intricate challenges. They will develop into highly skilled software developers, a huge benefit in the long term!'
   },
   {
     id: "p2",
