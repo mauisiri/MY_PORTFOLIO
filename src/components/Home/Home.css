@@ -84,8 +84,7 @@
 
 .contact_me>span {
     z-index: 40;
-    color: var(--dark);
-    
+    color: var(--dark); 
 }
 
 .contact_me>p {
@@ -153,5 +152,9 @@
 
     .contact_me {
         margin-top: 3rem;
+    }
+
+    .contact_me>div {
+        filter: none;
     }
 }

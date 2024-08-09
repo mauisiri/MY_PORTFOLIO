@@ -1,5 +1,3 @@
-import Contact from "./Contact/Contact";
-
 import ShopHeader from './ShoppingCart/ShopHeader';
 import Shop from './ShoppingCart/Shop';
 import Product from './ShoppingCart/Product';
