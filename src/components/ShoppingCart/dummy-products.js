@@ -23,7 +23,7 @@ export const DUMMY_PRODUCTS = [
     title: "Junior developer",
     price: 2000,
     description:
-      "The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed."
+      '"There is no senior without junior". Juniors can manage foundational and intermediate tasks, enabling seniors to focus on more intricate challenges. They have the potential to develop into highly skilled software developers, which can benefit the organization in the long term.'
   },
   {
     id: "p2",
