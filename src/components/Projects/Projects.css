@@ -72,7 +72,7 @@
 .project_icons{
     display:flex;
     flex-direction: row;
-    width: 35rem;
+    width: 25rem;
     justify-content: center;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.1);

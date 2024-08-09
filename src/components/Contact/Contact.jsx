@@ -40,15 +40,15 @@ const Contact = () => {
         <div className="contact_container">
           <img className='qu_code' src={web_icon} alt=' ' />
           <span>MORE OPTIONS
-            <div classname="contact_icon_box">
+            <div className="contact_icon_box">
               <li><a href="https://www.linkedin.com/in/irisleo/" target="_blank">
-                <img classname="contact_icon" src={in_icon} alt="LinkedIn"
+                <img className="contact_icon" src={in_icon} alt="LinkedIn"
                 width="35"  
                 height="35"
                 ></img>
               </a></li>
               <li><a href="https://github.com/mauisiri" target="_blank">
-                <img classname="contact_icon" src={git_icon} alt="GitHub"
+                <img className="contact_icon" src={git_icon} alt="GitHub"
                 width="50"  
                 height="50"
                 ></img>

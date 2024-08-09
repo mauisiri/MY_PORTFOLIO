@@ -5,7 +5,7 @@
 
 ### By writting `irisleo.com` or `irisleo.es` on your browser, you will be able to visit this app and see some information about me.
 
-### You will also be able to interact with some little applications I haave created for you! Enjoy 😁
+### You will also be able to interact with some little applications I have created for you! Enjoy 😁
 
 
 
